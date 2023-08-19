@@ -1,0 +1,91 @@
+// place your custom styles here
+@import './stars.scss';
+
+@function multiple-box-shadow($n) {
+    $value: "#{random(2000)}px #{random(2000)}px #FFF"; // 100 100 #fff
+
+    @for $i from 2 through $n {
+        $value: "#{$value} , #{random(2000)}px #{random(2000)}px #FFF";
+    }
+
+    @return unquote($value);
+}
+
+$shadows-small: multiple-box-shadow(700);
+$shadows-medium: multiple-box-shadow(200);
+$shadows-big: multiple-box-shadow(100);
+
+.vp-hero-info-wrapper {
+    // background: linear-gradient(left bottom, right top, from(#6d327c), color-stop(#485DA6), color-stop(#00a1ba), color-stop(#00BF98), to(#36C486))
+    // background: linear-gradient(to top right, #6d327c, #485DA6, #00a1ba, #00BF98, #36C486);
+
+    // background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    background: radial-gradient(circle at 30% top, #dfebf8 0%, #cee0f3a1 10%, #5cbede9f 30%, #37a7ed 100%);
+    overflow: hidden;
+    height: 92vh;
+    user-select: none;
+
+    &:after {
+        content: " ";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1px;
+        height: 1px;
+        background: white;
+        box-shadow: $shadows-small;
+        animation: animStar 150s linear infinite;
+    }
+
+    &:before {
+        content: " ";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 2px;
+        height: 2px;
+        background: white;
+        box-shadow: $shadows-medium;
+
+        border-radius: 50%;
+        animation: animStar 150s linear infinite;
+    }
+
+}
+
+html[data-theme=dark] {
+    .vp-hero-info-wrapper {
+        background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+
+        &:after {
+            content: " ";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 1px;
+            height: 1px;
+            box-shadow: $shadows-small;
+            animation: animStar 150s linear infinite;
+        }
+    }
+}
+
+.vp-hero-image {
+    box-shadow: 0px 1px 8px 0px rgb(127 127 127 / 37%);
+    border-radius: .8rem;
+    width: 12rem;
+    height: 12rem;
+    -webkit-user-drag: none;
+    // display: none;
+
+}
+
+.vp-feature-wrapper {
+
+    overflow: hidden;
+
+}
+
+.vp-description {
+    text-align: center;
+}

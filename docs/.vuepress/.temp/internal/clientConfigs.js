@@ -1,5 +1,5 @@
-import clientConfig0 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/src/.vuepress/.temp/sass-palette/load-hope.js'
-import clientConfig1 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/src/.vuepress/.temp/components/config.js'
+import clientConfig0 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/docs/.vuepress/.temp/sass-palette/load-hope.js'
+import clientConfig1 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/docs/.vuepress/.temp/components/config.js'
 import clientConfig2 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/@vuepress/plugin-active-header-links/lib/client/config.js'
 import clientConfig3 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-plugin-auto-catalog/lib/client/config.js'
 import clientConfig4 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/@vuepress/plugin-external-link-icon/lib/client/config.js'
@@ -7,10 +7,10 @@ import clientConfig5 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules
 import clientConfig6 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/@vuepress/plugin-theme-data/lib/client/config.js'
 import clientConfig7 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-plugin-comment2/lib/client/config.js'
 import clientConfig8 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-plugin-copy-code2/lib/client/config.js'
-import clientConfig9 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/src/.vuepress/.temp/md-enhance/config.js'
+import clientConfig9 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/docs/.vuepress/.temp/md-enhance/config.js'
 import clientConfig10 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-plugin-photo-swipe/lib/client/config.js'
-import clientConfig11 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/src/.vuepress/.temp/theme-hope/config.js'
-import clientConfig12 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/src/.vuepress/.temp/register-components/clientConfig.5aad855c.js'
+import clientConfig11 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/docs/.vuepress/.temp/theme-hope/config.js'
+import clientConfig12 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/docs/.vuepress/.temp/register-components/clientConfig.25e3f00f.js'
 import clientConfig13 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/@vuepress/plugin-search/lib/client/config.js'
 
 export const clientConfigs = [

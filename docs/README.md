@@ -5,26 +5,15 @@ bgImageStyle:
 heroImage: /assets/images/miao.jpg
 heroText: Welcome to my blog
 tagline: just daily study record 📌
-
+plugins.blog: true
 features:
   - title: 测试
     details: test
     link: /demo/
-  - title: 你好
-    details: 欢迎访问我的主页
-    link: /posts/
-  - title: 测试
-    details: test
-    link: /demo/
-  - title: 你好
-    details: 欢迎访问我的主页
-    link: /posts/
-  - title: 测试
-    details: test
-    link: /demo/
-  - title: 你好
-    details: 欢迎访问我的主页
-    link: /posts/
+  - title: 前端知识
+    details: love 大前端
+    link: /frontend/
+
 # projects:
 
 #   - icon: link

@@ -5,13 +5,12 @@ import clientConfig3 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules
 import clientConfig4 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/@vuepress/plugin-external-link-icon/lib/client/config.js'
 import clientConfig5 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/@vuepress/plugin-nprogress/lib/client/config.js'
 import clientConfig6 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/@vuepress/plugin-theme-data/lib/client/config.js'
-import clientConfig7 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-plugin-comment2/lib/client/config.js'
-import clientConfig8 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-plugin-copy-code2/lib/client/config.js'
-import clientConfig9 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/docs/.vuepress/.temp/md-enhance/config.js'
-import clientConfig10 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-plugin-photo-swipe/lib/client/config.js'
-import clientConfig11 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/docs/.vuepress/.temp/theme-hope/config.js'
-import clientConfig12 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/docs/.vuepress/.temp/register-components/clientConfig.25e3f00f.js'
-import clientConfig13 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/@vuepress/plugin-search/lib/client/config.js'
+import clientConfig7 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-plugin-copy-code2/lib/client/config.js'
+import clientConfig8 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/docs/.vuepress/.temp/md-enhance/config.js'
+import clientConfig9 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-plugin-photo-swipe/lib/client/config.js'
+import clientConfig10 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/docs/.vuepress/.temp/theme-hope/config.js'
+import clientConfig11 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/docs/.vuepress/.temp/register-components/clientConfig.25e3f00f.js'
+import clientConfig12 from 'C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/@vuepress/plugin-search/lib/client/config.js'
 
 export const clientConfigs = [
   clientConfig0,
@@ -27,5 +26,4 @@ export const clientConfigs = [
   clientConfig10,
   clientConfig11,
   clientConfig12,
-  clientConfig13,
 ]

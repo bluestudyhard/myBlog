@@ -2,51 +2,35 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   "/",
-  "/demo/",
   {
-    text: "博文",
+    text: "前端知识",
     icon: "pen-to-square",
-    prefix: "/posts/",
+    prefix: "/frontend/",
     children: [
       {
-        text: "苹果",
+        text: "HTML",
         icon: "pen-to-square",
-        prefix: "apple/",
+        children: [{ text: "HTML", icon: "pen-to-square", link: "html" }],
+      },
+      {
+        text: "css",
+        icon: "pen-to-square",
+        prefix: "css/",
         children: [
-          { text: "苹果1", icon: "pen-to-square", link: "1" },
-          { text: "苹果2", icon: "pen-to-square", link: "2" },
-          "3",
-          "4",
+          { text: "css", icon: "pen-to-square", link: "css" },
+          { text: "scss", icon: "pen-to-square", link: "scss" },
         ],
       },
       {
-        text: "香蕉",
+        text: "JavaScript",
         icon: "pen-to-square",
-        prefix: "banana/",
-        children: [
-          {
-            text: "香蕉 1",
-            icon: "pen-to-square",
-            link: "1",
-          },
-          {
-            text: "香蕉 2",
-            icon: "pen-to-square",
-            link: "2",
-          },
-          "3",
-          "4",
-        ],
+        prefix: "javascript/",
+        children: [{ text: "js basic", icon: "pen-to-square", link: "js" }],
       },
-      { text: "樱桃", icon: "pen-to-square", link: "cherry" },
-      { text: "火龙果", icon: "pen-to-square", link: "dragonfruit" },
-      "tomato",
-      "strawberry",
     ],
   },
-  {
-    text: "V2 文档",
-    icon: "book",
-    link: "https://theme-hope.vuejs.press/zh/",
-  },
+
+  "/demo/",
+
+  "/timeline/",
 ]);

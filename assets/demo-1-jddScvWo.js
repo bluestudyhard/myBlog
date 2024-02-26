@@ -1,0 +1,1 @@
+import{_ as e}from"./plugin-vue_export-helper-x3n3nnut.js";import{o,c as t,b as c}from"./app-xEYoAD2G.js";const s={},_={class:"container"},n=c("h1",null,"你好",-1),r=[n];function a(d,i){return o(),t("div",_,r)}const m=e(s,[["render",a],["__file","demo-1.vue"]]);export{m as default};

@@ -1,0 +1,1 @@
+import{_ as t}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as a,c as o,b as e,d as r}from"./app-xEYoAD2G.js";const c={},s=e("h3",{id:"递归生成路由",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#递归生成路由","aria-hidden":"true"},"#"),r(" 递归生成路由")],-1),_=[s];function n(d,i){return a(),o("div",null,_)}const f=t(c,[["render",n],["__file","vue进阶.html.vue"]]);export{f as default};

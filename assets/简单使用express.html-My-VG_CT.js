@@ -1,0 +1,1 @@
+import{_ as e}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as _,c as r}from"./app-xEYoAD2G.js";const t={};function c(o,s){return _(),r("div")}const f=e(t,[["render",c],["__file","简单使用express.html.vue"]]);export{f as default};

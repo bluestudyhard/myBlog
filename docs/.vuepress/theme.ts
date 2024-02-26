@@ -24,7 +24,7 @@ export default hopeTheme({
   // sidebar
   sidebar,
 
-  footer: "默认页脚",
+  footer: "melingblue",
 
   displayFooter: true,
 
@@ -106,7 +106,7 @@ export default hopeTheme({
       playground: {
         presets: ["ts", "vue"],
       },
-      presentation: ["highlight", "math", "search", "notes", "zoom"],
+
       stylize: [
         {
           matcher: "Recommended",

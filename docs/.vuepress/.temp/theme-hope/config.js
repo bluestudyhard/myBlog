@@ -1,18 +1,29 @@
 import { defineClientConfig } from "@vuepress/client";
-import { VPLink } from "C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-shared/lib/client/index.js";
+import { VPLink } from "C:/Users/31647/OneDrive/WEB/vuepress-blog/node_modules/.pnpm/vuepress-shared@2.0.0-rc.11_vuepress@2.0.0-rc.0/node_modules/vuepress-shared/lib/client/index.js";
 
-import { HopeIcon, Layout, NotFound, useScrollPromise, injectDarkmode, setupDarkmode, setupSidebarItems } from "C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-theme-hope/lib/bundle/export.js";
+import { HopeIcon, Layout, NotFound, useScrollPromise, injectDarkmode, setupDarkmode, setupSidebarItems } from "C:/Users/31647/OneDrive/WEB/vuepress-blog/node_modules/.pnpm/vuepress-theme-hope@2.0.0-rc.11_@vuepress+plugin-search@2.0.0-rc.0_markdown-it@13.0.2_vuepress@2.0.0-rc.0/node_modules/vuepress-theme-hope/lib/bundle/export.js";
 
-import { defineAutoCatalogIconComponent } from "C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-plugin-auto-catalog/lib/client/index.js"
-import { BlogCategory, BlogHome, BlogType, BloggerInfo, Timeline, setupBlog } from "C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-theme-hope/lib/bundle/modules/blog/export.js";
-import "C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-theme-hope/lib/bundle/modules/blog/styles/all.scss";
-import { GlobalEncrypt, LocalEncrypt } from "C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-theme-hope/lib/bundle/modules/encrypt/export.js";
-import "C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-theme-hope/lib/bundle/modules/encrypt/styles/all.scss"
-import Slide from "C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-plugin-md-enhance/lib/client/SlidePage.js";
+import { defineAutoCatalogGetter } from "C:/Users/31647/OneDrive/WEB/vuepress-blog/node_modules/.pnpm/vuepress-plugin-auto-catalog@2.0.0-rc.11_vuepress@2.0.0-rc.0/node_modules/vuepress-plugin-auto-catalog/lib/client/index.js"
+import { h } from "vue"
+import { BlogCategory, BlogHome, BlogType, BloggerInfo, Timeline, setupBlog } from "C:/Users/31647/OneDrive/WEB/vuepress-blog/node_modules/.pnpm/vuepress-theme-hope@2.0.0-rc.11_@vuepress+plugin-search@2.0.0-rc.0_markdown-it@13.0.2_vuepress@2.0.0-rc.0/node_modules/vuepress-theme-hope/lib/bundle/modules/blog/export.js";
+import "C:/Users/31647/OneDrive/WEB/vuepress-blog/node_modules/.pnpm/vuepress-theme-hope@2.0.0-rc.11_@vuepress+plugin-search@2.0.0-rc.0_markdown-it@13.0.2_vuepress@2.0.0-rc.0/node_modules/vuepress-theme-hope/lib/bundle/modules/blog/styles/all.scss";
+import { GlobalEncrypt, LocalEncrypt } from "C:/Users/31647/OneDrive/WEB/vuepress-blog/node_modules/.pnpm/vuepress-theme-hope@2.0.0-rc.11_@vuepress+plugin-search@2.0.0-rc.0_markdown-it@13.0.2_vuepress@2.0.0-rc.0/node_modules/vuepress-theme-hope/lib/bundle/modules/encrypt/export.js";
+import "C:/Users/31647/OneDrive/WEB/vuepress-blog/node_modules/.pnpm/vuepress-theme-hope@2.0.0-rc.11_@vuepress+plugin-search@2.0.0-rc.0_markdown-it@13.0.2_vuepress@2.0.0-rc.0/node_modules/vuepress-theme-hope/lib/bundle/modules/encrypt/styles/all.scss"
 
-import "C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-theme-hope/lib/bundle/styles/all.scss";
+import "C:/Users/31647/OneDrive/WEB/vuepress-blog/node_modules/.pnpm/vuepress-theme-hope@2.0.0-rc.11_@vuepress+plugin-search@2.0.0-rc.0_markdown-it@13.0.2_vuepress@2.0.0-rc.0/node_modules/vuepress-theme-hope/lib/bundle/styles/all.scss";
 
-defineAutoCatalogIconComponent(HopeIcon);
+defineAutoCatalogGetter((meta) => {
+  const title = meta.t;
+  const shouldIndex = meta.I !== false;
+  const icon = meta.i;
+
+  return shouldIndex ? {
+    title,
+    content: icon ? () =>[h(HopeIcon, { icon }), title] : null,
+    order: meta.O,
+    index: meta.I,
+  } : null;
+});
 
 export default defineClientConfig({
   enhance: ({ app, router }) => {
@@ -48,6 +59,5 @@ export default defineClientConfig({
     BlogHome,
     BlogType,
     Timeline,
-    Slide,
   }
 });

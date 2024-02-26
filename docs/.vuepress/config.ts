@@ -1,4 +1,5 @@
 import { defineUserConfig } from "vuepress";
+import { viteBundler } from '@vuepress/bundler-vite'
 import { getDirname, path } from "@vuepress/utils";
 import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
 import { searchPlugin } from "@vuepress/plugin-search";
@@ -8,7 +9,7 @@ import theme from "./theme.js";
 
 export default defineUserConfig({
   base: "/",
-
+  bundler: viteBundler(),
   head: [["link", { rel: "icon", href: "/logo.png" }]],
   lang: "zh-CN",
   title: "melingkk's blog",

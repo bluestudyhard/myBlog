@@ -1,47 +1,29 @@
 import { defineClientConfig } from "@vuepress/client";
-import ChartJS from "C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-plugin-md-enhance/lib/client/components/ChartJS.js";
-import CodeTabs from "C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-plugin-md-enhance/lib/client/components/CodeTabs.js";
-import { hasGlobalComponent } from "C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-shared/lib/client/index.js";
-import { CodeGroup, CodeGroupItem } from "C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-plugin-md-enhance/lib/client/compact/index.js";
-import "C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-plugin-md-enhance/lib/client/styles/container/index.scss";
-import CodeDemo from "C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-plugin-md-enhance/lib/client/components/CodeDemo.js";
-import ECharts from "C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-plugin-md-enhance/lib/client/components/ECharts.js";
-import "C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-plugin-md-enhance/lib/client/styles/figure.scss";
-import FlowChart from "C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-plugin-md-enhance/lib/client/components/FlowChart.js";
-import "C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-plugin-md-enhance/lib/client/styles/footnote.scss";
-import "C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-plugin-md-enhance/lib/client/styles/image-mark.scss"
-import Mermaid from "C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-plugin-md-enhance/lib/client/components/Mermaid.js";
-import { injectMermaidConfig } from "C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-plugin-md-enhance/lib/client//index.js";
-import "C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/reveal.js/dist/reveal.css";
-import Presentation from "C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-plugin-md-enhance/lib/client/components/Presentation.js";
-import { injectRevealConfig } from "C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-plugin-md-enhance/lib/client/index.js";
-import Playground from "C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-plugin-md-enhance/lib/client/components/Playground.js";
-import Tabs from "C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-plugin-md-enhance/lib/client/components/Tabs.js";
-import "C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-plugin-md-enhance/lib/client/styles/tasklist.scss";
-import "C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/katex/dist/katex.min.css";
-import "C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-plugin-md-enhance/lib/client/styles/katex.scss";
-import { defineAsyncComponent } from "vue";
-import { injectVuePlaygroundConfig } from "C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-plugin-md-enhance/lib/client/index.js";
+import CodeTabs from "C:/Users/31647/OneDrive/WEB/vuepress-blog/node_modules/.pnpm/vuepress-plugin-md-enhance@2.0.0-rc.11_markdown-it@13.0.2_vuepress@2.0.0-rc.0/node_modules/vuepress-plugin-md-enhance/lib/client/components/CodeTabs.js";
+import { hasGlobalComponent } from "C:/Users/31647/OneDrive/WEB/vuepress-blog/node_modules/.pnpm/vuepress-shared@2.0.0-rc.11_vuepress@2.0.0-rc.0/node_modules/vuepress-shared/lib/client/index.js";
+import { CodeGroup, CodeGroupItem } from "C:/Users/31647/OneDrive/WEB/vuepress-blog/node_modules/.pnpm/vuepress-plugin-md-enhance@2.0.0-rc.11_markdown-it@13.0.2_vuepress@2.0.0-rc.0/node_modules/vuepress-plugin-md-enhance/lib/client/compact/index.js";
+import CodeDemo from "C:/Users/31647/OneDrive/WEB/vuepress-blog/node_modules/.pnpm/vuepress-plugin-md-enhance@2.0.0-rc.11_markdown-it@13.0.2_vuepress@2.0.0-rc.0/node_modules/vuepress-plugin-md-enhance/lib/client/components/CodeDemo.js";
+import MdDemo from "C:/Users/31647/OneDrive/WEB/vuepress-blog/node_modules/.pnpm/vuepress-plugin-md-enhance@2.0.0-rc.11_markdown-it@13.0.2_vuepress@2.0.0-rc.0/node_modules/vuepress-plugin-md-enhance/lib/client/components/MdDemo.js";
+import "C:/Users/31647/OneDrive/WEB/vuepress-blog/node_modules/.pnpm/vuepress-plugin-md-enhance@2.0.0-rc.11_markdown-it@13.0.2_vuepress@2.0.0-rc.0/node_modules/vuepress-plugin-md-enhance/lib/client/styles/figure.scss";
+import "C:/Users/31647/OneDrive/WEB/vuepress-blog/node_modules/.pnpm/vuepress-plugin-md-enhance@2.0.0-rc.11_markdown-it@13.0.2_vuepress@2.0.0-rc.0/node_modules/vuepress-plugin-md-enhance/lib/client/styles/footnote.scss";
+import { useHint } from "C:/Users/31647/OneDrive/WEB/vuepress-blog/node_modules/.pnpm/vuepress-plugin-md-enhance@2.0.0-rc.11_markdown-it@13.0.2_vuepress@2.0.0-rc.0/node_modules/vuepress-plugin-md-enhance/lib/client/composables/hint.js";
+import "C:/Users/31647/OneDrive/WEB/vuepress-blog/node_modules/.pnpm/vuepress-plugin-md-enhance@2.0.0-rc.11_markdown-it@13.0.2_vuepress@2.0.0-rc.0/node_modules/vuepress-plugin-md-enhance/lib/client/styles/hint/index.scss";
+import "C:/Users/31647/OneDrive/WEB/vuepress-blog/node_modules/.pnpm/vuepress-plugin-md-enhance@2.0.0-rc.11_markdown-it@13.0.2_vuepress@2.0.0-rc.0/node_modules/vuepress-plugin-md-enhance/lib/client/styles/image-mark.scss"
+import Playground from "C:/Users/31647/OneDrive/WEB/vuepress-blog/node_modules/.pnpm/vuepress-plugin-md-enhance@2.0.0-rc.11_markdown-it@13.0.2_vuepress@2.0.0-rc.0/node_modules/vuepress-plugin-md-enhance/lib/client/components/Playground.js";
+import Tabs from "C:/Users/31647/OneDrive/WEB/vuepress-blog/node_modules/.pnpm/vuepress-plugin-md-enhance@2.0.0-rc.11_markdown-it@13.0.2_vuepress@2.0.0-rc.0/node_modules/vuepress-plugin-md-enhance/lib/client/components/Tabs.js";
+import "C:/Users/31647/OneDrive/WEB/vuepress-blog/node_modules/.pnpm/vuepress-plugin-md-enhance@2.0.0-rc.11_markdown-it@13.0.2_vuepress@2.0.0-rc.0/node_modules/vuepress-plugin-md-enhance/lib/client/styles/tasklist.scss";
 
 export default defineClientConfig({
   enhance: ({ app }) => {
-    app.component("ChartJS", ChartJS)
     app.component("CodeTabs", CodeTabs);
     if(!hasGlobalComponent("CodeGroup", app)) app.component("CodeGroup", CodeGroup);
     if(!hasGlobalComponent("CodeGroupItem", app)) app.component("CodeGroupItem", CodeGroupItem);
     app.component("CodeDemo", CodeDemo);
-    app.component("ECharts", ECharts);
-    app.component("FlowChart", FlowChart);
-    injectMermaidConfig(app);
-    app.component("Mermaid", Mermaid);
-    injectRevealConfig(app);
-    app.component("Presentation", Presentation);
+    app.component("MdDemo", MdDemo);
     app.component("Playground", Playground);
     app.component("Tabs", Tabs);
-    injectVuePlaygroundConfig(app);
-    app.component("VuePlayground", defineAsyncComponent(() => import("C:/Users/31647/Desktop/WEB/vuepress-blog/node_modules/vuepress-plugin-md-enhance/lib/client/components/VuePlayground.js")));
   },
   setup: () => {
-
+useHint();
   }
 });

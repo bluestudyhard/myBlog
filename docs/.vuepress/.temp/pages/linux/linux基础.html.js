@@ -1,0 +1,14 @@
+export const data = JSON.parse("{\"key\":\"v-57d4b301\",\"path\":\"/linux/linux%E5%9F%BA%E7%A1%80.html\",\"title\":\"linux 基础\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"linux 基础\",\"description\":\"入门指南 查看 ip 地址 ip address ifconfig\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://mister-hope.github.io/linux/linux%E5%9F%BA%E7%A1%80.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"melingkk's blog\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"linux 基础\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"入门指南 查看 ip 地址 ip address ifconfig\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"article:author\",\"content\":\"bluestudyhard\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"linux 基础\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":null,\\\"author\\\":[{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"bluestudyhard\\\",\\\"url\\\":\\\"https://github.com/bluestudyhard?tab=repositories\\\"}]}\"]]},\"headers\":[{\"level\":2,\"title\":\"linux 指令\",\"slug\":\"linux-指令\",\"link\":\"#linux-指令\",\"children\":[{\"level\":3,\"title\":\"ls 指令\",\"slug\":\"ls-指令\",\"link\":\"#ls-指令\",\"children\":[]},{\"level\":3,\"title\":\"文件操作\",\"slug\":\"文件操作\",\"link\":\"#文件操作\",\"children\":[]},{\"level\":3,\"title\":\"文件复制 cp\",\"slug\":\"文件复制-cp\",\"link\":\"#文件复制-cp\",\"children\":[]},{\"level\":3,\"title\":\"文件移动 mv\",\"slug\":\"文件移动-mv\",\"link\":\"#文件移动-mv\",\"children\":[]}]},{\"level\":2,\"title\":\"使用 Vim\",\"slug\":\"使用-vim\",\"link\":\"#使用-vim\",\"children\":[{\"level\":3,\"title\":\"Vim 的常用操作\",\"slug\":\"vim-的常用操作\",\"link\":\"#vim-的常用操作\",\"children\":[]}]},{\"level\":2,\"title\":\"文件操作\",\"slug\":\"文件操作-1\",\"link\":\"#文件操作-1\",\"children\":[{\"level\":3,\"title\":\"文件查找\",\"slug\":\"文件查找\",\"link\":\"#文件查找\",\"children\":[]}]}],\"readingTime\":{\"minutes\":1.55,\"words\":464},\"filePathRelative\":\"linux/linux基础.md\",\"excerpt\":\"<p><a href=\\\"https://zhuanlan.zhihu.com/p/74123215\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">入门指南</a></p>\\n<p>查看 ip 地址</p>\\n<div class=\\\"language-bash line-numbers-mode\\\" data-ext=\\\"sh\\\"><pre class=\\\"language-bash\\\"><code><span class=\\\"token function\\\">ip</span> address\\n<span class=\\\"token function\\\">ifconfig</span>\\n</code></pre><div class=\\\"line-numbers\\\" aria-hidden=\\\"true\\\"><div class=\\\"line-number\\\"></div><div class=\\\"line-number\\\"></div></div></div>\",\"autoDesc\":true}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

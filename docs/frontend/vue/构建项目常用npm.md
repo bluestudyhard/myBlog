@@ -1,19 +1,27 @@
+## vite 启动模板 fork antfu
+
+https://github.com/bluestudyhard/vite-template
+
+```bash
+git clone https://github.com/bluestudyhard/vite-template.git
+```
+
 ## 新建 vite 项目
 
 ```bash
-npm create vite@latest
+pnpm create vite@latest
 ```
 
 ## 新建 vue 项目
 
 ```bash
-npm init vue@latest
+pnpm init vue@latest
 ```
 
 ## 安装 element plus
 
 ```bash
-npm install element-plus --save
+pnpm install element-plus --save
 pnpm install element-plus
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
@@ -26,7 +34,7 @@ APP.use(ElementPlus)
 pnpm install vue-router@4
 ```
 
-自动注册路由
+### 自动注册路由
 
 ```bash
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router';
@@ -56,10 +64,20 @@ const router = createRouter({
 export default router;
 ```
 
+### 文件式路由
+
 ## pinia
 
 ```bash
 pnpm install pinia
+pnpm install pinia-plugin-persistedstate
+# 在main.ts中
+import { createPinia } from 'pinia';
+import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
+const pinia = createPinia()
+const app = createApp(App)
+app.use(pinia)
+pinia.use(piniaPluginPersistedstate)
 ```
 
 ## nodejs
@@ -177,7 +195,7 @@ module.exports = {
 };
 ```
 
-### [](https://github.com/antfu/eslint-config#lint-staged)Lint Staged  
+### [](https://github.com/antfu/eslint-config#lint-staged)Lint Staged 
 
 If you want to apply lint and auto-fix before every commit, you can add the following to your `package.json`:  
 如果您想在每次提交之前应用 lint 和自动修复，您可以将以下内容添加到您的  `package.json`  中：
@@ -252,8 +270,8 @@ Or you can always fork this repo and make your own.
 - [antfu/vitesse](https://github.com/antfu/vitesse) - My starter template for Vue & Vite app  
    antfu/vitesse - 我的 Vue 和 Vite 应用程序的入门模板
 
-
 ## reset.scss
+
 ```scss
 /**
  * Modern CSS Reset Tweaks
@@ -278,7 +296,6 @@ body {
   text-rendering: optimizeSpeed;
 }
 
-
 /* Box sizing normalization */
 *,
 ::after,
@@ -286,12 +303,10 @@ body {
   box-sizing: border-box;
 }
 
-
 /* Elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
-
 
 /**
  * CSS Reset Tweaks
@@ -422,7 +437,7 @@ q {
 
   &:before,
   &:after {
-    content: '';
+    content: "";
     content: none;
   }
 }
@@ -442,15 +457,15 @@ input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px white inset;
 }
 
-input[type=search]::-webkit-search-cancel-button,
-input[type=search]::-webkit-search-decoration,
-input[type=search]::-webkit-search-results-button,
-input[type=search]::-webkit-search-results-decoration {
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
 
-input[type=search] {
+input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   -webkit-box-sizing: content-box;
@@ -618,7 +633,6 @@ table {
   text-indent: 0;
 }
 
-
 /**
  * Based on normalize.css v8.0.1
  * github.com/necolas/normalize.css
@@ -753,7 +767,6 @@ button::-moz-focus-inner,
   outline: 0;
 }
 
-
 legend {
   color: inherit;
   white-space: normal;
@@ -772,14 +785,12 @@ body:not(:-moz-handler-blocked) fieldset {
   display: block;
 }
 
-
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
 progress {
   vertical-align: baseline;
 }
-
 
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
@@ -788,7 +799,6 @@ progress {
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
-
 
 /**
  * 1. Correct the odd appearance in Chrome and Safari.

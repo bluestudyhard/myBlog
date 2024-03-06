@@ -9,12 +9,15 @@ date: 2023-09-25
 ### 创建一个应用实例
 
 **类型**
+
 ```bash
   function createApp(rootComponent: Component, rootProps?: object): App
-  ```
+```
+
 **详细信息**
-  第一个参数是根组件。第二个参数可选，它是要传递给根组件的 props。
+第一个参数是根组件。第二个参数可选，它是要传递给根组件的 props。
 **示例**
+
 - 可以直接内联根组件：
 
 ```bash
@@ -58,27 +61,24 @@ app.mount('#app')
 
 根组件的模板通常是组件本身的一部分，但也可以直接通过在挂载容器内编写模板来单独提供：
 
-
 ```html
 <div id="app">
   <button @click="count++">{{ count }}</button>
 </div>
 ```
 
-
-
 ```js
-import { createApp } from 'vue'
+import { createApp } from "vue";
 
 const app = createApp({
   data() {
     return {
-      count: 0
-    }
-  }
-})
+      count: 0,
+    };
+  },
+});
 
-app.mount('#app')
+app.mount("#app");
 ```
 
 当根组件没有设置  `template`  选项时，Vue 将自动使用容器的  `innerHTML`  作为模板。
@@ -89,19 +89,16 @@ DOM 内模板通常用于[无构建步骤](https://cn.vuejs.org/guide/quick-star
 
 应用实例会暴露一个  `.config`  对象允许我们配置一些应用级的选项，例如定义一个应用级的错误处理器，用来捕获所有子组件上的错误：
 
-
-
 ```js
 app.config.errorHandler = (err) => {
   /* 处理错误 */
-}
+};
 ```
 
 应用实例还提供了一些方法来注册应用范围内可用的资源，例如注册一个组件：
 
-
 ```js
-app.component('TodoDeleteButton', TodoDeleteButton)
+app.component("TodoDeleteButton", TodoDeleteButton);
 ```
 
 这使得  `TodoDeleteButton`  在应用的任何地方都是可用的。我们会在指南的后续章节中讨论关于组件和其他资源的注册。你也可以在  [API 参考](https://cn.vuejs.org/api/application.html)中浏览应用实例 API 的完整列表。
@@ -112,18 +109,16 @@ app.component('TodoDeleteButton', TodoDeleteButton)
 
 应用实例并不只限于一个。`createApp` API 允许你在同一个页面中创建多个共存的 Vue 应用，而且每个应用都拥有自己的用于配置和全局资源的作用域。
 
-
-
 ```js
 const app1 = createApp({
   /* ... */
-})
-app1.mount('#container-1')
+});
+app1.mount("#container-1");
 
 const app2 = createApp({
   /* ... */
-})
-app2.mount('#container-2')
+});
+app2.mount("#container-2");
 ```
 
 ## 响应式基础
@@ -153,13 +148,13 @@ console.log(foo.value) // 1
 ref 会根据初始化时的值推导其类型：
 
 ```ts
-import { ref } from 'vue'
+import { ref } from "vue";
 
 // 推导出的类型：Ref<number>
-const year = ref(2020)
+const year = ref(2020);
 
 // => TS Error: Type 'string' is not assignable to type 'number'.
-year.value = '2020'
+year.value = "2020";
 ```
 
 有时我们可能想为 ref 内的值指定一个更复杂的类型，可以通过使用  `Ref`  这个类型：
@@ -176,8 +171,8 @@ makeType.value = 2020; // 成功！
 
 ```js
 // 得到的类型：Ref<string | number>
-const year = ref<string | number>('2020')
-year.value = 2020 // 成功！
+const year = (ref < string) | (number > "2020");
+year.value = 2020; // 成功！
 ```
 
 如果你指定了一个泛型参数但没有给出初始值，那么最后得到的就将是一个包含  `undefined`  的联合类型：
@@ -200,6 +195,7 @@ reactive 其实可以理解为带了响应式的对象，但是他和原本的�
 下面是一个简单的示例，展示了如何使用 `Proxy` 来拦截对象的读取和赋值操作：
 
 :::
+
 ```javascript
 const target = {
   name: "John",
@@ -230,7 +226,6 @@ console.log(proxy.age); // 读取属性 age，输出 "正在读取属性 age"，
 
 `Proxy` 对象还支持其他许多拦截方法，例如 `apply`（拦截函数的调用）、`has`（拦截 `in` 操作符）、`deleteProperty`（拦截属性删除操作）等。你可以根据需要使用这些方法来自定义对象的行为。
 
-
 #### 为  `reactive()`  标注类型[​](https://cn.vuejs.org/guide/typescript/composition-api.html#typing-reactive)
 
 `reactive()`  也会隐式地从它的参数中推导类型：
@@ -254,9 +249,7 @@ interface Book {
 const book: Book = reactive({ title: 'Vue 3 指引' })
 ```
 
-
 ## v-for
-
 
 ## computed 计算属性
 
@@ -265,24 +258,23 @@ const book: Book = reactive({ title: 'Vue 3 指引' })
 计算属性的值会缓存，只有当计算属性的依赖变化了才会重新计算
 他的原型大概为
 
-
 ## props
 
 父组件可以像子组件传递值，在`<script setup>`中,可以使用 vue 自带的 defineprops(不需要 import) 来定义要传递的值，然后在子组件中使用 props 接收
 我们使用一个简单的 todolist 和 listItem 来实验一下
 
-::: tips 
+::: tips
 现在来说一般都使用 defineProps<{}>()这样的格式在子组件定义传递的参数
 
-```ts  
-// 父组件 
+```ts
+// 父组件
   <div class="center-col p-2 gap-2">
       <ul v-for="(habit, index) in habitList" :key="index">
         <HabitItem :habit="habit" :index="index + 1" />
       </ul>
 </div>
 
-// 子组件 
+// 子组件
 
 const props = defineProps<{
   habit: Habit
@@ -293,12 +285,11 @@ const props = defineProps<{
 </p>
 ```
 
-
 ### 用 TS 标准 props
 
 通过基于类型的声明，一个 prop 可以像使用其他任何类型一样使用一个复杂类型：
 
-```ts 
+```ts
 <script setup lang="ts">
 interface Book {
   title: string
@@ -314,40 +305,63 @@ const props = defineProps<{
 
 对于运行时声明，我们可以使用 PropType 工具类型：
 
-```ts 
-import type { PropType } from 'vue'
+```ts
+import type { PropType } from "vue";
 
 const props = defineProps({
-book: Object as PropType<Book>
-})
+  book: Object as PropType<Book>,
+});
 ```
 
 ## emits
 
-
 ### 子传父
-emits
 
+emits
+在 vue3 中可以直接使用 defineEmits 来定义传递的事件
 
 - 指正版
-首先子组件给父组件传值，需要定义emits，传的是方法，
+  首先子组件给父组件传值，需要定义 emits，传的是方法，
 
 然后在父组件那边引用子组件的地方，可以@这个传过去的方法，再写一个函数来接子组件的值，父组件这边函数的(parms),其实就是从子组件引过来的值，直接用父组件这边的值等于就好了
 
 本质：在父组件中，可以调用子组件的事件，但是相对的如果要接受子组件的值，需要父组件这边再写一个方法来传值
+
 - 官方代码示例
 
 在父组件中，我们若想接收子组件传递的数据，还得再声明一个方法，然后用一个参数，接收子组件传来的参数。
-- 首先，要使用emit的话，要先使用defineEmits() 定义需要传过去的方法名称
-- 然后，可以在需要绑定事件的地方，可以直接使用，$emit("methods",parms) 写事件，也可以在script中，用emit先创建一个事件
 
+- 首先，要使用 emit 的话，要先使用 defineEmits() 定义需要传过去的方法名称
+- 然后，可以在需要绑定事件的地方，可以直接使用，$emit("methods",parms) 写事件，也可以在 script 中，用 emit 先创建一个事件
+  **上示例**
+
+```js {.line-numbers}
+// 子组件
+<script setup lang="ts">
+  const emits = defineEmits<{
+    // 定义需要传递的方法名称
+    addHabit: (habit: Habit) => void
+
+  }>()
+  const habit = ref<Habit>({
+    title: '',
+    date: new Date().toISOString()
+  })
+</script>
+<template>
+
+<button @click="emits('add',habit)">添加</button>
+
+<template>
+
+```
 
 ## 插槽
 
 slot 插槽是为了可以更好的使用组件，因为我们的组件内容如果是写死的话，复用性会很低
 比如说我有一个组件
 
-```ts 
+```ts
 // son.vue
 <template>这是写死的内容</template>
 ```
@@ -359,7 +373,7 @@ slot 插槽是为了可以更好的使用组件，因为我们的组件内容如
 
 使用默认插槽只要在组件内部需要插值的地方提供`<slot></slot>`标签即可
 
-```ts 
+```ts
 <template>
   <div>
     <h3>testslot</h3>
@@ -371,7 +385,7 @@ slot 插槽是为了可以更好的使用组件，因为我们的组件内容如
 
 然后在需要用到组件的地方，直接在组件标签内部写入需要插入的内容即可
 
-```ts 
+```ts
 script setup lang="ts">
 import TestSlot from '../components/TestSlot.vue'
 
@@ -397,7 +411,7 @@ import TestSlot from '../components/TestSlot.vue'
 
 有时在一个组件中包含多个插槽出口是很有用的。举例来说，在一个 组件中，有如下模板：
 
-```ts 
+```ts
 <div class="container">
   <header>
     <!-- 标题内容放这里 -->
@@ -416,7 +430,7 @@ import TestSlot from '../components/TestSlot.vue'
 这里的默认插槽需要使用#default，不然就会报错
 要为具名插槽传入内容，我们需要使用一个含 v-slot 指令的
 
-```ts 
+```ts
 <template> 元素，并将目标插槽的名字传给该指令：
 
 template
@@ -426,11 +440,12 @@ template
 </template>
 </BaseLayout>
 ```
+
 :::
 v-slot 有对应的简写 #，因此 `<template v-slot:header> `可以简写为 `<template #header>`。其意思就是“将这部分模板片段传入子组件的 header 插槽中”。
 ![](images/20230925165429.png)
 
-```ts 
+```ts
 
     在这里我们可以引入我们需要的组件，然后将组件标签打开
     <TestSlot>
@@ -450,7 +465,7 @@ v-slot 有对应的简写 #，因此 `<template v-slot:header> `可以简写为 
 动态插槽名 ​
 动态指令参数在 v-slot 上也是有效的，即可以定义下面这样的动态插槽名：
 
-```ts 
+```ts
 
 <base-layout>
   <template v-slot:[dynamicSlotName]>
@@ -470,7 +485,7 @@ v-slot 有对应的简写 #，因此 `<template v-slot:header> `可以简写为 
 
 ### 具名作用域插槽
 
-```ts 
+```ts
 
 <script setup lang="ts">
 import { ref } from 'vue'
@@ -479,7 +494,7 @@ const message = ref("子组件传递插槽props给父")
  <slot name="props" :text="message" :count=1>这是通过子slot向上传递props</slot>
 ```
 
-```ts 
+```ts
 <template #props="testProps">
       {{ testProps.text }}
       {{ testProps.count }}

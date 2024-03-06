@@ -1,3 +1,8 @@
+---
+title: 解析 html
+date: 2023-7
+---
+
 ## 想解析 html 的起因
 
 我的 navigation 有一个功能需求就是输入网站 url 就可以直接得到网站的 icon 和名称(描述)，但是这样的话需要直接根据 url 去爬取
@@ -8,7 +13,7 @@
 from fish 因为我这个需求单纯的只是解析书签，然后如果这点小事都要传到后端再传回来的话会很费资源，所以最好就是在前端搞定了以后，将确认要的网站丢回去。所以有一个很妙的方法，众所周知，只要拿到了文件，然后将它加到一个`<div></div> `浏览器就自己会帮你解析成 html，然后就可以使用 dom 元素了(node 里达咩)
 综上，代码端上来罢
 
-```ts 
+```ts
 const bookMarkList = ref<{ name: string; bookmarks: bookMarkType[] }[]>([]);
 function parseHtml(html: HTMLElement) {
   const main = html.querySelector("DL DT");
@@ -58,7 +63,7 @@ function onDrop(files: File[] | null) {
 这玩意很原生，试了下在 node 里面不能用，所以我选择了 jsdom)
 大概用法
 
-```ts 
+```ts
 const html = fetch(url); // axios.get(url)
 const domparser = new DomParser();
 const doc = domparser.parseFromString(html,"text/html")
@@ -70,7 +75,7 @@ const head = document.querySelect('head')
 
 搜了一下相关的库，发现老的一。。。就 jsdom 还是 23 年 4 月更新的，彳亍！用！
 
-```ts 
+```ts
 import express from "express";
 import axios from "axios";
 

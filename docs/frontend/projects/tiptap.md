@@ -1,3 +1,8 @@
+---
+title: 使用 tiptap 创建一个富文本编辑器
+date: 2024-01-01
+---
+
 ## 使用 tiptap 创建一个富文本编辑器
 
 ## 安装
@@ -24,7 +29,7 @@ https://tiptap.dev/docs/editor/examples/default
 
 代码如下：
 
-```js {.line-numbers}
+```js
 <script setup lang="ts">
 import StarterKit from '@tiptap/starter-kit'
 import { EditorContent, useEditor } from '@tiptap/vue-3'
@@ -251,7 +256,7 @@ button {
 
 ![](images/20240304005740.png)
 
-```js {.line-numbers}
+```js
     const state = editor?.value?.state as EditorState
     console.log('$doc', editor.value.$doc)
     console.log('$node', editor.value.$node)

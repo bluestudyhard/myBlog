@@ -1,93 +1,147 @@
 // place your custom styles here
-@import './stars.scss';
+@import "./stars.scss";
 
 @function multiple-box-shadow($n) {
-    $value: "#{random(2000)}px #{random(2000)}px #FFF"; // 100 100 #fff
+  $value: "#{random(2000)}px #{random(2000)}px #FFF"; // 100 100 #fff
 
-    @for $i from 2 through $n {
-        $value: "#{$value} , #{random(2000)}px #{random(2000)}px #FFF";
-    }
+  @for $i from 2 through $n {
+    $value: "#{$value} , #{random(2000)}px #{random(2000)}px #FFF";
+  }
 
-    @return unquote($value);
+  @return unquote($value);
 }
 
 $shadows-small: multiple-box-shadow(800);
 $shadows-medium: multiple-box-shadow(200);
 $shadows-big: multiple-box-shadow(100);
 
-
-.vp-hero-info-wrapper {
-    // background: linear-gradient(left bottom, right top, from(#6d327c), color-stop(#485DA6), color-stop(#00a1ba), color-stop(#00BF98), to(#36C486))
-    // background: linear-gradient(to top right, #6d327c, #485DA6, #00a1ba, #00BF98, #36C486);
-
-    // background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-    background: radial-gradient(circle at 30% -10%, #fcfcdfb9 2%, #72dafcbe 30%, #3dacf0 100%);
-    overflow: hidden;
-    height: 92vh;
-    user-select: none;
-
-    &:after {
-        content: " ";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 1px;
-        height: 1px;
-        background: white;
-        box-shadow: $shadows-small;
-        animation: animStar 100s linear infinite;
-    }
-
-    &:before {
-        content: " ";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 2px;
-        height: 2px;
-        background: white;
-        box-shadow: $shadows-medium;
-
-        border-radius: 30%;
-        animation: animStar 150s linear infinite;
-    }
-
-
+.vp-hero-info {
+  #main-description {
+    text-align: center;
+  }
 }
 
-html[data-theme=dark] {
-    .vp-hero-info-wrapper {
-        background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+.vp-hero-info-wrapper {
+  // background: linear-gradient(left bottom, right top, from(#6d327c), color-stop(#485DA6), color-stop(#00a1ba), color-stop(#00BF98), to(#36C486))
+  // background: linear-gradient(to top right, #6d327c, #485DA6, #00a1ba, #00BF98, #36C486);
 
-        &:after {
-            content: " ";
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 1px;
-            height: 1px;
-            box-shadow: $shadows-small;
-            animation: animStar 150s linear infinite;
-        }
+  // background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  background: radial-gradient(
+    circle at 30% -10%,
+    #fcfcdfb9 2%,
+    #72dafcbe 30%,
+    #3dacf0 100%
+  );
+  overflow: hidden;
+  height: 92vh;
+  user-select: none;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    background: white;
+    box-shadow: $shadows-small;
+    animation: animStar 100s linear infinite;
+  }
+
+  &:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 2px;
+    background: white;
+    box-shadow: $shadows-medium;
+
+    border-radius: 30%;
+    animation: animStar 150s linear infinite;
+  }
+}
+
+html[data-theme="dark"] {
+  .vp-hero-info-wrapper {
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+
+    &:after {
+      content: " ";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1px;
+      height: 1px;
+      box-shadow: $shadows-small;
+      animation: animStar 150s linear infinite;
     }
+  }
+  .vp-feature-item {
+    box-shadow: 2px 0px 2px 0px rgba(24, 43, 99, 0.295);
+  }
+  .vp-sidebar {
+    .icon {
+      font-size: 1.05rem;
+      color: #f9f9f9;
+    }
+  }
 }
 
 .vp-hero-image {
-    box-shadow: 0px 1px 8px 0px rgb(127 127 127 / 37%);
-    border-radius: .8rem;
-    width: 12rem;
-    height: 12rem;
-    -webkit-user-drag: none;
-    // display: none;
-
+  box-shadow: 0px 1px 8px 0px rgb(127 127 127 / 37%);
+  border-radius: 0.8rem;
+  width: 12rem;
+  height: 12rem;
+  -webkit-user-drag: none;
+  // display: none;
 }
-
-.vp-feature-wrapper {
-
+.vp-sidebar {
+  font-size: 0.9rem;
+  padding-inline-start: 1rem;
+  .icon {
+    font-size: 1rem;
+    color: #244664;
+  }
+}
+.vp-features {
+  //   flex-wrap: nowrap;
+  align-items: center;
+  text-align: inherit;
+  place-content: inherit;
+  .vp-feature-wrapper {
     overflow: hidden;
-
+  }
+  .vp-feature-item {
+    box-shadow: 2px 0px 2px 0px rgb(2 77 241 / 13%);
+  }
 }
 
 .vp-description {
-    text-align: center;
+  text-align: center;
+}
+
+// 文章内容
+.theme-hope-content {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    // line-height: 2rem;
+    font-weight: 550;
+    padding-bottom: 0.7rem;
+  }
+  font-size: 0.92rem;
+  letter-spacing: 0.03rem;
+
+  p,
+  ul,
+  ol,
+  li {
+    line-height: 1.8;
+    margin: 1rem 0;
+  }
 }

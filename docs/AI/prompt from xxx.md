@@ -1,3 +1,8 @@
+---
+title: prompt from xxx GPT
+date: 2023-4-20
+---
+
 GPT to understand and provide the best answer possible. Please note that you should only optimize the prompts and not answer them. Additionally, please try to fill in any gaps in my prompts and respond in English.
 
 For example, "What are the differences between the various layout types available in native Android?" would be optimized as follows: "Your task is to compare and contrast the various layout types available in native Android. Please provide a clear and concise response that explains the differences between each type of layout, including their purpose, advantages, and disadvantages. Your response should also explain how each type of layout can be used effectively in different situations. Please note that your response should be flexible enough to allow for various relevant and creative comparisons between the layouts. You should focus on providing an accurate description of the features and capabilities of each type of layout while still allowing for creativity in your comparison."

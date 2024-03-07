@@ -9,7 +9,7 @@ date: 2023-07-20
 
 ### 安装
 
-```bash {.line-numbers}
+```bash
 pnpm install element-plus
 ```
 
@@ -18,7 +18,7 @@ pnpm install element-plus
 https://element-plus.org/zh-CN/guide/quickstart.html
 **完整**
 
-```ts {.line-numbers}
+```ts 
 import { createApp } from "vue";
 import ElementPlus from "element-plus";
 import "element-plus/dist/index.css";
@@ -33,7 +33,7 @@ app.mount("#app");
 **按需**
 先装两款插件
 
-```ts {.line-numbers}
+```ts 
 pnpm install -D unplugin-vue-components unplugin-auto-import
 ```
 
@@ -41,7 +41,7 @@ pnpm install -D unplugin-vue-components unplugin-auto-import
 
 Vite
 
-```ts {.line-numbers}
+```ts 
 // vite.config.ts
 import { defineConfig } from "vite";
 import AutoImport from "unplugin-auto-import/vite";
@@ -71,7 +71,7 @@ container 主要用的是包括 header，main，footer 的
 
 然后放在父组件的 Main 里面
 
-```js {.line-numbers}
+```js 
 // management.vue
   <div class="el-container m-t-1">
     <el-container>
@@ -131,7 +131,7 @@ container 主要用的是包括 header，main，footer 的
   </div>
 ```
 
-```js {.line-numbers}
+```js 
 // layouts/main.vue
 <template>
   <!-- 路由组件出口的位置 -->
@@ -151,7 +151,7 @@ container 主要用的是包括 header，main，footer 的
 
 可以注释掉一些原本的样式，不然不方便布局
 
-```css {.line-numbers}
+```css 
 /* 针对饿了么的设置 */
 .el-menu {
   background-color: transparent !important;
@@ -174,7 +174,7 @@ container 主要用的是包括 header，main，footer 的
 **做法**
 这里看我们的常量路由，我们可以将一些配置项写好，然后
 
-```js {.line-numbers}
+```js 
 const constantRoute = [
   {
     path: "/management/showdata",
@@ -220,7 +220,7 @@ const constantRoute = [
 
 写一个 Menu 组件，然后递归渲染
 
-```js {.line-numbers}
+```js 
 <template>
   <el-menu class="el-menu" :collapse="collapse">
     <template v-for="(item, index) in menuList" :key="item.path">
@@ -269,7 +269,7 @@ const constantRoute = [
 
 vite.config.ts
 
-```js {.line-numbers}
+```js 
 import path from "path";
 import { defineConfig } from "vite";
 import Vue from "@vitejs/plugin-vue";
@@ -338,7 +338,7 @@ export default defineConfig({
 https://element-plus.org/zh-CN/component/icon.html
 我闲懒就全局注册了 icons
 
-```js {.line-numbers}
+```js 
 // 如果您正在使用CDN引入，请删除下面一行。
 import * as ElementPlusIconsVue from "@element-plus/icons-vue";
 
@@ -357,7 +357,7 @@ for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
 基础用法#
 使用 type、plain、round 和 circle 来定义按钮的样式。
 
-```js {.line-numbers}
+```js 
 <template>
   <div class="mb-4">
     <el-button>Default</el-button>
@@ -421,7 +421,7 @@ https://element-plus.org/zh-CN/component/dialog.html
 这个弹出对话框，在里面如果嵌套了 select 组件的话，展开会跳出滚动条，而我的 main 早已设置了 overflow:hidden,经过排查后发现还是不行，查了一些文章才知道这是饿了么的问题,他的遮罩层并没有 overflow
 解决方法：
 
-```css {.line-numbers}
+```css 
 .el-overlay-dialog {
   overflow: hidden !important;
 }

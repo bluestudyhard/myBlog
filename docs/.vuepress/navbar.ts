@@ -5,7 +5,7 @@ export default navbar([
   {
     "text": "前端知识",
     "prefix": "/frontend/",
-    icon: "javascript",
+    icon: "fab fa-square-js",
 
     "children": [
       {
@@ -108,6 +108,9 @@ export default navbar([
           {
             "text": "navigation",
             "link": "navigation.md"
+          }, {
+            "text": "tiptap",
+            "link": "tiptap.md"
           }
         ]
       },
@@ -118,7 +121,7 @@ export default navbar([
       {
         "text": "vue",
         "prefix": "vue/",
-        icon: "vue-js",
+        icon: "fab fa-vuejs",
 
         "children": [
           {
@@ -177,10 +180,7 @@ export default navbar([
         "prefix": "核心理论知识/",
 
         "children": [
-          {
-            "text": "202309121241.png",
-            "link": "202309121241.png"
-          },
+
           {
             "text": "浏览器事件循环原理",
             "link": "浏览器事件循环原理.md"
@@ -201,7 +201,7 @@ export default navbar([
 
     text: "后端知识",
     prefix: "/backend/",
-
+    icon: "fas fa-server",
     children: [
       {
         "text": "java",
@@ -250,7 +250,7 @@ export default navbar([
   {
     "text": "计算机基础",
     "prefix": "计算机基础/",
-
+    icon: "fas fa-laptop-code",
     "children": [
       {
         "text": "作为一个萌新应该如何“正确”的入门",
@@ -293,7 +293,6 @@ export default navbar([
       }
     ]
   },
-
 
   "/demo/",
 

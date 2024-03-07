@@ -33,39 +33,39 @@
 <div class="language-html line-numbers-mode" data-ext="html"><pre v-pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>app<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>count++<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>{{ count }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> createApp <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vue'</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> createApp <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"vue"</span><span class="token punctuation">;</span>
 
 <span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">createApp</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
   <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">return</span> <span class="token punctuation">{</span>
-      <span class="token literal-property property">count</span><span class="token operator">:</span> <span class="token number">0</span>
-    <span class="token punctuation">}</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token literal-property property">count</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-app<span class="token punctuation">.</span><span class="token function">mount</span><span class="token punctuation">(</span><span class="token string">'#app'</span><span class="token punctuation">)</span>
+app<span class="token punctuation">.</span><span class="token function">mount</span><span class="token punctuation">(</span><span class="token string">"#app"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>当根组件没有设置  <code v-pre>template</code>  选项时，Vue 将自动使用容器的  <code v-pre>innerHTML</code>  作为模板。</p>
 <p>DOM 内模板通常用于<a href="https://cn.vuejs.org/guide/quick-start.html#using-vue-from-cdn" target="_blank" rel="noopener noreferrer">无构建步骤<ExternalLinkIcon/></a>的 Vue 应用程序。它们也可以与服务器端框架一起使用，其中根模板可能是由服务器动态生成的。</p>
 <h3 id="应用配置​" tabindex="-1"><a class="header-anchor" href="#应用配置​" aria-hidden="true">#</a> 应用配置<a href="https://cn.vuejs.org/guide/essentials/application.html#app-configurations" target="_blank" rel="noopener noreferrer">​<ExternalLinkIcon/></a></h3>
 <p>应用实例会暴露一个  <code v-pre>.config</code>  对象允许我们配置一些应用级的选项，例如定义一个应用级的错误处理器，用来捕获所有子组件上的错误：</p>
 <div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code>app<span class="token punctuation">.</span>config<span class="token punctuation">.</span><span class="token function-variable function">errorHandler</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
   <span class="token comment">/* 处理错误 */</span>
-<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>应用实例还提供了一些方法来注册应用范围内可用的资源，例如注册一个组件：</p>
-<div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code>app<span class="token punctuation">.</span><span class="token function">component</span><span class="token punctuation">(</span><span class="token string">'TodoDeleteButton'</span><span class="token punctuation">,</span> TodoDeleteButton<span class="token punctuation">)</span>
+<div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code>app<span class="token punctuation">.</span><span class="token function">component</span><span class="token punctuation">(</span><span class="token string">"TodoDeleteButton"</span><span class="token punctuation">,</span> TodoDeleteButton<span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>这使得  <code v-pre>TodoDeleteButton</code>  在应用的任何地方都是可用的。我们会在指南的后续章节中讨论关于组件和其他资源的注册。你也可以在  <a href="https://cn.vuejs.org/api/application.html" target="_blank" rel="noopener noreferrer">API 参考<ExternalLinkIcon/></a>中浏览应用实例 API 的完整列表。</p>
 <p>确保在挂载应用实例之前完成所有应用配置！</p>
 <h3 id="多个应用实例​" tabindex="-1"><a class="header-anchor" href="#多个应用实例​" aria-hidden="true">#</a> 多个应用实例<a href="https://cn.vuejs.org/guide/essentials/application.html#multiple-application-instances" target="_blank" rel="noopener noreferrer">​<ExternalLinkIcon/></a></h3>
 <p>应用实例并不只限于一个。<code v-pre>createApp</code> API 允许你在同一个页面中创建多个共存的 Vue 应用，而且每个应用都拥有自己的用于配置和全局资源的作用域。</p>
 <div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> app1 <span class="token operator">=</span> <span class="token function">createApp</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
   <span class="token comment">/* ... */</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span>
-app1<span class="token punctuation">.</span><span class="token function">mount</span><span class="token punctuation">(</span><span class="token string">'#container-1'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+app1<span class="token punctuation">.</span><span class="token function">mount</span><span class="token punctuation">(</span><span class="token string">"#container-1"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
 <span class="token keyword">const</span> app2 <span class="token operator">=</span> <span class="token function">createApp</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
   <span class="token comment">/* ... */</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span>
-app2<span class="token punctuation">.</span><span class="token function">mount</span><span class="token punctuation">(</span><span class="token string">'#container-2'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+app2<span class="token punctuation">.</span><span class="token function">mount</span><span class="token punctuation">(</span><span class="token string">"#container-2"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="响应式基础" tabindex="-1"><a class="header-anchor" href="#响应式基础" aria-hidden="true">#</a> 响应式基础</h2>
 <h3 id="ref" tabindex="-1"><a class="header-anchor" href="#ref" aria-hidden="true">#</a> ref</h3>
 <p>ref 其实可以理解为带了响应式的值，他的原型大概为</p>
@@ -79,13 +79,13 @@ console.log<span class="token punctuation">(</span>foo.value<span class="token p
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>使用 ref 的场景就是当我们需要获取响应式的值时，才调用，有一些常量我们还是用以前的声明方法。具体的响应式原理请看<RouterLink to="/frontend/vue/vue%E8%BF%9B%E9%98%B6.html">vue 进阶</RouterLink></p>
 <h4 id="在-ts-中为-ref-标注类型" tabindex="-1"><a class="header-anchor" href="#在-ts-中为-ref-标注类型" aria-hidden="true">#</a> 在 TS 中为 ref 标注类型</h4>
 <p>ref 会根据初始化时的值推导其类型：</p>
-<div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="language-typescript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> ref <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vue'</span>
+<div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="language-typescript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> ref <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"vue"</span><span class="token punctuation">;</span>
 
 <span class="token comment">// 推导出的类型：Ref&lt;number></span>
-<span class="token keyword">const</span> year <span class="token operator">=</span> <span class="token function">ref</span><span class="token punctuation">(</span><span class="token number">2020</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> year <span class="token operator">=</span> <span class="token function">ref</span><span class="token punctuation">(</span><span class="token number">2020</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
 <span class="token comment">// => TS Error: Type 'string' is not assignable to type 'number'.</span>
-year<span class="token punctuation">.</span>value <span class="token operator">=</span> <span class="token string">'2020'</span>
+year<span class="token punctuation">.</span>value <span class="token operator">=</span> <span class="token string">"2020"</span><span class="token punctuation">;</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>有时我们可能想为 ref 内的值指定一个更复杂的类型，可以通过使用  <code v-pre>Ref</code>  这个类型：</p>
 <div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> ref <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vue'</span>
 <span class="token keyword">import</span> type <span class="token punctuation">{</span> Ref <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vue'</span>
@@ -94,8 +94,8 @@ year<span class="token punctuation">.</span>value <span class="token operator">=
 makeType<span class="token punctuation">.</span>value <span class="token operator">=</span> <span class="token number">2020</span><span class="token punctuation">;</span> <span class="token comment">// 成功！</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>或者，在调用  <code v-pre>ref()</code>  时传入一个泛型参数，来覆盖默认的推导行为：</p>
 <div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token comment">// 得到的类型：Ref&lt;string | number></span>
-<span class="token keyword">const</span> year <span class="token operator">=</span> ref<span class="token operator">&lt;</span>string <span class="token operator">|</span> number<span class="token operator">></span><span class="token punctuation">(</span><span class="token string">'2020'</span><span class="token punctuation">)</span>
-year<span class="token punctuation">.</span>value <span class="token operator">=</span> <span class="token number">2020</span> <span class="token comment">// 成功！</span>
+<span class="token keyword">const</span> year <span class="token operator">=</span> <span class="token punctuation">(</span>ref <span class="token operator">&lt;</span> string<span class="token punctuation">)</span> <span class="token operator">|</span> <span class="token punctuation">(</span>number <span class="token operator">></span> <span class="token string">"2020"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+year<span class="token punctuation">.</span>value <span class="token operator">=</span> <span class="token number">2020</span><span class="token punctuation">;</span> <span class="token comment">// 成功！</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>如果你指定了一个泛型参数但没有给出初始值，那么最后得到的就将是一个包含  <code v-pre>undefined</code>  的联合类型：</p>
 <div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token comment">// 推导得到的类型：Ref&lt;number | undefined></span>
 <span class="token keyword">const</span> n <span class="token operator">=</span> ref<span class="token operator">&lt;</span>number<span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">// undefined</span>
@@ -160,14 +160,14 @@ console<span class="token punctuation">.</span><span class="token function">log<
 我们使用一个简单的 todolist 和 listItem 来实验一下</p>
 <p>::: tips<br>
 现在来说一般都使用 defineProps&lt;{}&gt;()这样的格式在子组件定义传递的参数</p>
-<div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="language-typescript"><code><span class="token comment">// 父组件 </span>
+<div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="language-typescript"><code><span class="token comment">// 父组件</span>
   <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"center-col p-2 gap-2"</span><span class="token operator">></span>
       <span class="token operator">&lt;</span>ul v<span class="token operator">-</span><span class="token keyword">for</span><span class="token operator">=</span><span class="token string">"(habit, index) in habitList"</span> <span class="token operator">:</span>key<span class="token operator">=</span><span class="token string">"index"</span><span class="token operator">></span>
         <span class="token operator">&lt;</span>HabitItem <span class="token operator">:</span>habit<span class="token operator">=</span><span class="token string">"habit"</span> <span class="token operator">:</span>index<span class="token operator">=</span><span class="token string">"index + 1"</span> <span class="token operator">/</span><span class="token operator">></span>
       <span class="token operator">&lt;</span><span class="token operator">/</span>ul<span class="token operator">></span>
 <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
 
-<span class="token comment">// 子组件 </span>
+<span class="token comment">// 子组件</span>
 
 <span class="token keyword">const</span> props <span class="token operator">=</span> <span class="token generic-function"><span class="token function">defineProps</span><span class="token generic class-name"><span class="token operator">&lt;</span><span class="token punctuation">{</span>
   habit<span class="token operator">:</span> Habit
@@ -190,17 +190,18 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <span class="token punctuation">}</span><span class="token operator">></span></span></span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>对于运行时声明，我们可以使用 PropType 工具类型：</p>
-<div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="language-typescript"><code><span class="token keyword">import</span> <span class="token keyword">type</span> <span class="token punctuation">{</span> PropType <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vue'</span>
+<div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="language-typescript"><code><span class="token keyword">import</span> <span class="token keyword">type</span> <span class="token punctuation">{</span> PropType <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"vue"</span><span class="token punctuation">;</span>
 
 <span class="token keyword">const</span> props <span class="token operator">=</span> <span class="token function">defineProps</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-book<span class="token operator">:</span> Object <span class="token keyword">as</span> PropType<span class="token operator">&lt;</span>Book<span class="token operator">></span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span>
+  book<span class="token operator">:</span> Object <span class="token keyword">as</span> PropType<span class="token operator">&lt;</span>Book<span class="token operator">></span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="emits" tabindex="-1"><a class="header-anchor" href="#emits" aria-hidden="true">#</a> emits</h2>
 <h3 id="子传父" tabindex="-1"><a class="header-anchor" href="#子传父" aria-hidden="true">#</a> 子传父</h3>
-<p>emits</p>
+<p>emits<br>
+在 vue3 中可以直接使用 defineEmits 来定义传递的事件</p>
 <ul>
 <li>指正版<br>
-首先子组件给父组件传值，需要定义emits，传的是方法，</li>
+首先子组件给父组件传值，需要定义 emits，传的是方法，</li>
 </ul>
 <p>然后在父组件那边引用子组件的地方，可以@这个传过去的方法，再写一个函数来接子组件的值，父组件这边函数的(parms),其实就是从子组件引过来的值，直接用父组件这边的值等于就好了</p>
 <p>本质：在父组件中，可以调用子组件的事件，但是相对的如果要接受子组件的值，需要父组件这边再写一个方法来传值</p>
@@ -209,10 +210,29 @@ book<span class="token operator">:</span> Object <span class="token keyword">as<
 </ul>
 <p>在父组件中，我们若想接收子组件传递的数据，还得再声明一个方法，然后用一个参数，接收子组件传来的参数。</p>
 <ul>
-<li>首先，要使用emit的话，要先使用defineEmits() 定义需要传过去的方法名称</li>
-<li>然后，可以在需要绑定事件的地方，可以直接使用，$emit(&quot;methods&quot;,parms) 写事件，也可以在script中，用emit先创建一个事件</li>
+<li>首先，要使用 emit 的话，要先使用 defineEmits() 定义需要传过去的方法名称</li>
+<li>然后，可以在需要绑定事件的地方，可以直接使用，$emit(&quot;methods&quot;,parms) 写事件，也可以在 script 中，用 emit 先创建一个事件<br>
+<strong>上示例</strong></li>
 </ul>
-<h2 id="插槽" tabindex="-1"><a class="header-anchor" href="#插槽" aria-hidden="true">#</a> 插槽</h2>
+<div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="line-numbers language-javascript"><code><span class="token comment">// 子组件</span>
+<span class="token operator">&lt;</span>script setup lang<span class="token operator">=</span><span class="token string">"ts"</span><span class="token operator">></span>
+  <span class="token keyword">const</span> emits <span class="token operator">=</span> defineEmits<span class="token operator">&lt;</span><span class="token punctuation">{</span>
+    <span class="token comment">// 定义需要传递的方法名称</span>
+    <span class="token function-variable function">addHabit</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token literal-property property">habit</span><span class="token operator">:</span> Habit</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token keyword">void</span>
+
+  <span class="token punctuation">}</span><span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token keyword">const</span> habit <span class="token operator">=</span> ref<span class="token operator">&lt;</span>Habit<span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">date</span><span class="token operator">:</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toISOString</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
+<span class="token operator">&lt;</span>template<span class="token operator">></span>
+
+<span class="token operator">&lt;</span>button @click<span class="token operator">=</span><span class="token string">"emits('add',habit)"</span><span class="token operator">></span>添加<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">></span>
+
+<span class="token operator">&lt;</span>template<span class="token operator">></span>
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="插槽" tabindex="-1"><a class="header-anchor" href="#插槽" aria-hidden="true">#</a> 插槽</h2>
 <p>slot 插槽是为了可以更好的使用组件，因为我们的组件内容如果是写死的话，复用性会很低<br>
 比如说我有一个组件</p>
 <div class="language-typescript line-numbers-mode" data-ext="ts"><pre v-pre class="language-typescript"><code><span class="token comment">// son.vue</span>

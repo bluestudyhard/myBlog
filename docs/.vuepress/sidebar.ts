@@ -6,7 +6,7 @@ export default sidebar({
     {
       collapsible: true,
       text: "如何使用",
-      icon: "laptop-code",
+      icon: "fab fa-accusoft",
       prefix: "demo/",
       link: "demo/",
       children: "structure",
@@ -14,12 +14,13 @@ export default sidebar({
     {
       "text": "前端知识",
       "prefix": "/frontend/",
-      icon: "javascript",
+      icon: "fab fa-square-js",
       "collapsible": true,
       "children": [
         {
           "text": "css",
           "prefix": "css/",
+          "icon": "fab fa-css3",
           "collapsible": true,
           "children": [
             {
@@ -39,6 +40,7 @@ export default sidebar({
         {
           "text": "docker",
           "prefix": "docker/",
+          "icon": "fab fa-docker",
           "collapsible": true,
           "children": [
             {
@@ -55,6 +57,7 @@ export default sidebar({
         {
           "text": "homo",
           "prefix": "homo/",
+          "icon": "fab fa-apple",
           "collapsible": true,
           "children": [
             {
@@ -70,6 +73,7 @@ export default sidebar({
         {
           "text": "javascript",
           "prefix": "javascript/",
+          "icon": "fab fa-js",
           "collapsible": true,
           "children": [
             {
@@ -97,6 +101,7 @@ export default sidebar({
         {
           "text": "nodejs",
           "prefix": "nodejs/",
+          "icon": "fab fa-node-js",
           "collapsible": true,
           "children": [
             {
@@ -112,11 +117,15 @@ export default sidebar({
         {
           "text": "projects",
           "prefix": "projects/",
+          "icon": "fas fa-project-diagram",
           "collapsible": true,
           "children": [
             {
               "text": "navigation",
               "link": "navigation.md"
+            }, {
+              "text": "tiptap",
+              "link": "tiptap.md"
             }
           ]
         },
@@ -127,7 +136,7 @@ export default sidebar({
         {
           "text": "vue",
           "prefix": "vue/",
-          icon: "vue-js",
+          icon: "fab fa-vuejs",
           "collapsible": true,
           "children": [
             {
@@ -167,6 +176,7 @@ export default sidebar({
         {
           "text": "前端常用请求",
           "prefix": "前端常用请求/",
+          "icon": "fas fa-cloud",
           "collapsible": true,
           "children": [
             {
@@ -184,12 +194,9 @@ export default sidebar({
         {
           "text": "核心理论知识",
           "prefix": "核心理论知识/",
+          "icon": "fas fa-book-open",
           "collapsible": true,
           "children": [
-            {
-              "text": "202309121241.png",
-              "link": "202309121241.png"
-            },
             {
               "text": "浏览器事件循环原理",
               "link": "浏览器事件循环原理.md"
@@ -210,7 +217,7 @@ export default sidebar({
       collapsible: true,
       text: "后端知识",
       prefix: "/backend/",
-
+      icon: "fas fa-server",
       children: [
         {
           "text": "java",
@@ -259,17 +266,20 @@ export default sidebar({
     {
       collapsible: true,
       text: "常识能力",
+      icon: "fa fa-book",
       prefix: "CsCommon/",
       children: "structure"
     },
     {
       collapsible: true,
       text: "linux",
+      icon: "fab fa-linux",
       prefix: "linux/",
       children: "structure"
     }, {
       "text": "计算机基础",
       "prefix": "计算机基础/",
+      icon: "fas fa-laptop-code",
       "collapsible": true,
       "children": [
         {
@@ -313,7 +323,22 @@ export default sidebar({
         }
       ]
     }
+    ,
+    {
+      text: "UI设计",
+      prefix: "UiDesign/",
+      icon: "fas fa-palette",
+      collapsible: true,
 
+      children: "structure"
+    },
+    {
+      text: "AI",
+      prefix: "AI/",
+      icon: "fas fa-robot",
+      collapsible: true,
+      children: "structure"
+    }
   ],
 
 });

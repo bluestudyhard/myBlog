@@ -26,15 +26,14 @@
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="actions" tabindex="-1"><a class="header-anchor" href="#actions" aria-hidden="true">#</a> actions</h2>
 <p>actions 就是仓库自带的一些方法，也就是仓库自带的函数，一般使用 actions 的时候都是在一开始我就需要一些数据时，由仓库自己调用，然后获取<br>
 比如说，开局我要发送登录请求，或者开局我登录以后我要获取用户信息，这个时候就可以考虑使用 actions</p>
-<h3 id="" tabindex="-1"><a class="header-anchor" href="#" aria-hidden="true">#</a> </h3>
-<h2 id="各种使用tips" tabindex="-1"><a class="header-anchor" href="#各种使用tips" aria-hidden="true">#</a> 各种使用tips</h2>
+<h2 id="各种使用-tips" tabindex="-1"><a class="header-anchor" href="#各种使用-tips" aria-hidden="true">#</a> 各种使用 tips</h2>
 <h3 id="关于响应式数据的问题" tabindex="-1"><a class="header-anchor" href="#关于响应式数据的问题" aria-hidden="true">#</a> 关于响应式数据的问题</h3>
-<p>如果在组件内使用store的话，用storeTorefs调用state，然后在template里面更新数据是会响应式更新的<br>
+<p>如果在组件内使用 store 的话，用 storeTorefs 调用 state，然后在 template 里面更新数据是会响应式更新的<br>
 <img src="@source/frontend/vue/images/20231124205129.png" alt="" loading="lazy"></p>
-<p>然后调用里面的get函数的话，也是可以响应式更新的<br>
+<p>然后调用里面的 get 函数的话，也是可以响应式更新的<br>
 <img src="@source/frontend/vue/images/20231124205202.png" alt="" loading="lazy"><br>
 <img src="@source/frontend/vue/images/20231124205055.png" alt="" loading="lazy"></p>
-<p>但是如果隔了两层的话就不行了，就是如果在actions里面再调用get函数的话，就不会响应式更新了</p>
+<p>但是如果隔了两层的话就不行了，就是如果在 actions 里面再调用 get 函数的话，就不会响应式更新了</p>
 <p><img src="@source/frontend/vue/images/20231124205324.png" alt="" loading="lazy"><br>
 这样添加了以后页面数据是没有更新的</p>
 </div></template>

@@ -1,3 +1,8 @@
+---
+title: AIgc
+date: 2023-4-20
+---
+
 ## 正向 prompt：
 
 best quality,masterpiece,illustration, an extremely delicate and beautiful,extremely detailed,CG,unity,8k wallpaper,

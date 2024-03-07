@@ -7,13 +7,21 @@ heroText: Welcome to my blog
 tagline: just daily study record 📌
 plugins.blog: true
 features:
-  - title: 测试
-    details: test
-    link: /demo/
   - title: 前端知识
     details: love 大前端
     link: /frontend/
-
+  - title: 后端知识
+    details: 真不熟bro
+    link: /backend/
+  - title: 计算机基础
+    details: 四大件基础必须扎实
+    link: /计算机基础/
+  - title: UI
+    details: 兼职一下UI哥
+    link: /UiDesign/
+  - title: AI
+    details: 这玩意笔记做的不多后面慢慢补
+    link: /AI/
 # projects:
 
 #   - icon: link

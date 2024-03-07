@@ -1,6 +1,11 @@
+---
+title: 使用node进行反向代理
+date: 2022-10-20 20:00:00
+---
+
 ## 先在这里丢个代码
 
-```ts 
+```ts
 const express = require("express");
 const { createProxyMiddleware } = require("http-proxy-middleware");
 const app = express();

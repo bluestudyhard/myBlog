@@ -7,9 +7,60 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "这是一个标题",
-    "headers": [],
-    "path": "/backend/",
+    "title": "",
+    "headers": [
+      {
+        "level": 2,
+        "title": "正向 prompt：",
+        "slug": "正向-prompt",
+        "link": "#正向-prompt",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "负向  prompt：",
+        "slug": "负向-prompt",
+        "link": "#负向-prompt",
+        "children": []
+      }
+    ],
+    "path": "/AI/aigc.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [
+      {
+        "level": 3,
+        "title": "#PowerShell expert",
+        "slug": "powershell-expert",
+        "link": "#powershell-expert",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "#专家！",
+        "slug": "专家",
+        "link": "#专家",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "前端干活",
+        "slug": "前端干活",
+        "link": "#前端干活",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "super prompt",
+        "slug": "super-prompt",
+        "link": "#super-prompt",
+        "children": []
+      }
+    ],
+    "path": "/AI/prompt%20from%20xxx.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -17,6 +68,137 @@ export const searchIndex = [
     "title": "提高搜索能力",
     "headers": [],
     "path": "/CsCommon/%E6%8F%90%E9%AB%98%E6%90%9C%E7%B4%A2%E8%83%BD%E5%8A%9B.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "这是一个标题",
+    "headers": [],
+    "path": "/backend/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "布局与功能禁用",
+    "headers": [],
+    "path": "/demo/disable.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "密码加密的文章",
+    "headers": [],
+    "path": "/demo/encrypt.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "关于vuepress-theme-hope 中图标的使用",
+    "headers": [
+      {
+        "level": 2,
+        "title": "图标的使用",
+        "slug": "图标的使用",
+        "link": "#图标的使用",
+        "children": []
+      }
+    ],
+    "path": "/demo/icon.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Markdown 展示",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Markdown 介绍",
+        "slug": "markdown-介绍",
+        "link": "#markdown-介绍",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Markdown 配置",
+        "slug": "markdown-配置",
+        "link": "#markdown-配置",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Markdown 扩展",
+        "slug": "markdown-扩展",
+        "link": "#markdown-扩展",
+        "children": [
+          {
+            "level": 3,
+            "title": "VuePress 扩展",
+            "slug": "vuepress-扩展",
+            "link": "#vuepress-扩展",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "主题扩展",
+            "slug": "主题扩展",
+            "link": "#主题扩展",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "图片增强",
+            "slug": "图片增强",
+            "link": "#图片增强",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/demo/markdown.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "页面配置",
+    "headers": [
+      {
+        "level": 2,
+        "title": "页面信息",
+        "slug": "页面信息",
+        "link": "#页面信息",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "页面内容",
+        "slug": "页面内容",
+        "link": "#页面内容",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "页面结构",
+        "slug": "页面结构",
+        "link": "#页面结构",
+        "children": []
+      }
+    ],
+    "path": "/demo/page.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "主要功能与配置演示",
+    "headers": [
+      {
+        "level": 2,
+        "title": "目录",
+        "slug": "目录",
+        "link": "#目录",
+        "children": []
+      }
+    ],
+    "path": "/demo/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -36,7 +218,7 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "",
+    "title": "解析 html",
     "headers": [
       {
         "level": 2,
@@ -222,111 +404,126 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "布局与功能禁用",
-    "headers": [],
-    "path": "/demo/disable.html",
+    "title": "UI 的一些设计技巧",
+    "headers": [
+      {
+        "level": 3,
+        "title": "因为 ui 这东西做笔记很麻烦，所以可能很多东西自己熟练就好，记一些好贴图的笔记",
+        "slug": "因为-ui-这东西做笔记很麻烦-所以可能很多东西自己熟练就好-记一些好贴图的笔记",
+        "link": "#因为-ui-这东西做笔记很麻烦-所以可能很多东西自己熟练就好-记一些好贴图的笔记",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "UI 界面优化的 35 个小技巧",
+        "slug": "ui-界面优化的-35-个小技巧",
+        "link": "#ui-界面优化的-35-个小技巧",
+        "children": []
+      }
+    ],
+    "path": "/UiDesign/ui%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E8%AE%A1%E6%8A%80%E5%B7%A7.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "密码加密的文章",
-    "headers": [],
-    "path": "/demo/encrypt.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Markdown 展示",
+    "title": "",
     "headers": [
       {
         "level": 2,
-        "title": "Markdown 介绍",
-        "slug": "markdown-介绍",
-        "link": "#markdown-介绍",
+        "title": "理解编程是什么，编程的思维",
+        "slug": "理解编程是什么-编程的思维",
+        "link": "#理解编程是什么-编程的思维",
         "children": []
       },
       {
         "level": 2,
-        "title": "Markdown 配置",
-        "slug": "markdown-配置",
-        "link": "#markdown-配置",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Markdown 扩展",
-        "slug": "markdown-扩展",
-        "link": "#markdown-扩展",
+        "title": "选择一门语言开始",
+        "slug": "选择一门语言开始",
+        "link": "#选择一门语言开始",
         "children": [
           {
             "level": 3,
-            "title": "VuePress 扩展",
-            "slug": "vuepress-扩展",
-            "link": "#vuepress-扩展",
+            "title": "从语言出发进行刷题训练",
+            "slug": "从语言出发进行刷题训练",
+            "link": "#从语言出发进行刷题训练",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "选择一款好用的工具",
+        "slug": "选择一款好用的工具",
+        "link": "#选择一款好用的工具",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "懂得如何在网上正确的检索出资料",
+        "slug": "懂得如何在网上正确的检索出资料",
+        "link": "#懂得如何在网上正确的检索出资料",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "懂得逛 gayhub",
+        "slug": "懂得逛-gayhub",
+        "link": "#懂得逛-gayhub",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "懂得如何提问",
+        "slug": "懂得如何提问",
+        "link": "#懂得如何提问",
+        "children": []
+      }
+    ],
+    "path": "/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E4%BD%9C%E4%B8%BA%E4%B8%80%E4%B8%AA%E8%90%8C%E6%96%B0%E5%BA%94%E8%AF%A5%E5%A6%82%E4%BD%95%E2%80%9C%E6%AD%A3%E7%A1%AE%E2%80%9D%E7%9A%84%E5%85%A5%E9%97%A8.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [
+      {
+        "level": 2,
+        "title": "起因",
+        "slug": "起因",
+        "link": "#起因",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "解决",
+        "slug": "解决",
+        "link": "#解决",
+        "children": [
+          {
+            "level": 3,
+            "title": "安装rustc",
+            "slug": "安装rustc",
+            "link": "#安装rustc",
             "children": []
           },
           {
             "level": 3,
-            "title": "主题扩展",
-            "slug": "主题扩展",
-            "link": "#主题扩展",
+            "title": "下载python3.8",
+            "slug": "下载python3-8",
+            "link": "#下载python3-8",
             "children": []
           },
           {
             "level": 3,
-            "title": "图片增强",
-            "slug": "图片增强",
-            "link": "#图片增强",
+            "title": "手动安装whl",
+            "slug": "手动安装whl",
+            "link": "#手动安装whl",
             "children": []
           }
         ]
       }
     ],
-    "path": "/demo/markdown.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "页面配置",
-    "headers": [
-      {
-        "level": 2,
-        "title": "页面信息",
-        "slug": "页面信息",
-        "link": "#页面信息",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "页面内容",
-        "slug": "页面内容",
-        "link": "#页面内容",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "页面结构",
-        "slug": "页面结构",
-        "link": "#页面结构",
-        "children": []
-      }
-    ],
-    "path": "/demo/page.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "主要功能与配置演示",
-    "headers": [
-      {
-        "level": 2,
-        "title": "目录",
-        "slug": "目录",
-        "link": "#目录",
-        "children": []
-      }
-    ],
-    "path": "/demo/",
+    "path": "/backend/python/autopy.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -415,108 +612,6 @@ export const searchIndex = [
       }
     ],
     "path": "/backend/java/springboot.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "",
-    "headers": [
-      {
-        "level": 2,
-        "title": "起因",
-        "slug": "起因",
-        "link": "#起因",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "解决",
-        "slug": "解决",
-        "link": "#解决",
-        "children": [
-          {
-            "level": 3,
-            "title": "安装rustc",
-            "slug": "安装rustc",
-            "link": "#安装rustc",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "下载python3.8",
-            "slug": "下载python3-8",
-            "link": "#下载python3-8",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "手动安装whl",
-            "slug": "手动安装whl",
-            "link": "#手动安装whl",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/backend/python/autopy.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "",
-    "headers": [
-      {
-        "level": 2,
-        "title": "理解编程是什么，编程的思维",
-        "slug": "理解编程是什么-编程的思维",
-        "link": "#理解编程是什么-编程的思维",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "选择一门语言开始",
-        "slug": "选择一门语言开始",
-        "link": "#选择一门语言开始",
-        "children": [
-          {
-            "level": 3,
-            "title": "从语言出发进行刷题训练",
-            "slug": "从语言出发进行刷题训练",
-            "link": "#从语言出发进行刷题训练",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "选择一款好用的工具",
-        "slug": "选择一款好用的工具",
-        "link": "#选择一款好用的工具",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "懂得如何在网上正确的检索出资料",
-        "slug": "懂得如何在网上正确的检索出资料",
-        "link": "#懂得如何在网上正确的检索出资料",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "懂得逛 gayhub",
-        "slug": "懂得逛-gayhub",
-        "link": "#懂得逛-gayhub",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "懂得如何提问",
-        "slug": "懂得如何提问",
-        "link": "#懂得如何提问",
-        "children": []
-      }
-    ],
-    "path": "/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E4%BD%9C%E4%B8%BA%E4%B8%80%E4%B8%AA%E8%90%8C%E6%96%B0%E5%BA%94%E8%AF%A5%E5%A6%82%E4%BD%95%E2%80%9C%E6%AD%A3%E7%A1%AE%E2%80%9D%E7%9A%84%E5%85%A5%E9%97%A8.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -756,6 +851,59 @@ export const searchIndex = [
       }
     ],
     "path": "/frontend/css/scss.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [
+      {
+        "level": 2,
+        "title": "什么是 Unocss",
+        "slug": "什么是-unocss",
+        "link": "#什么是-unocss",
+        "children": [
+          {
+            "level": 3,
+            "title": "特点",
+            "slug": "特点",
+            "link": "#特点",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "基础配置",
+        "slug": "基础配置",
+        "link": "#基础配置",
+        "children": [
+          {
+            "level": 3,
+            "title": "一些快捷配置",
+            "slug": "一些快捷配置",
+            "link": "#一些快捷配置",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "语法",
+        "slug": "语法",
+        "link": "#语法",
+        "children": [
+          {
+            "level": 3,
+            "title": "两种用法",
+            "slug": "两种用法",
+            "link": "#两种用法",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/frontend/css/unocss.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1226,7 +1374,7 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "",
+    "title": "关于js的深拷贝和浅拷贝",
     "headers": [
       {
         "level": 2,
@@ -1248,7 +1396,7 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "",
+    "title": "使用node进行反向代理",
     "headers": [
       {
         "level": 2,
@@ -1263,7 +1411,7 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "",
+    "title": "简单使用express",
     "headers": [],
     "path": "/frontend/nodejs/%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8express.html",
     "pathLocale": "/",
@@ -1285,20 +1433,226 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "",
+    "title": "使用 tiptap 创建一个富文本编辑器",
     "headers": [
+      {
+        "level": 2,
+        "title": "使用 tiptap 创建一个富文本编辑器",
+        "slug": "使用-tiptap-创建一个富文本编辑器",
+        "link": "#使用-tiptap-创建一个富文本编辑器",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "安装",
+        "slug": "安装",
+        "link": "#安装",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "API",
+        "slug": "api",
+        "link": "#api",
+        "children": [
+          {
+            "level": 3,
+            "title": "Editor",
+            "slug": "editor",
+            "link": "#editor",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "官方示例的初始编辑器及其用法解释",
+            "slug": "官方示例的初始编辑器及其用法解释",
+            "link": "#官方示例的初始编辑器及其用法解释",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Editor 的方法",
+            "slug": "editor-的方法",
+            "link": "#editor-的方法",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "针对这个 Tiptap 学习的一些总结",
+            "slug": "针对这个-tiptap-学习的一些总结",
+            "link": "#针对这个-tiptap-学习的一些总结",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "项目要做的功能日志记录",
+        "slug": "项目要做的功能日志记录",
+        "link": "#项目要做的功能日志记录",
+        "children": [
+          {
+            "level": 3,
+            "title": "富文本编辑器",
+            "slug": "富文本编辑器",
+            "link": "#富文本编辑器",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/frontend/projects/tiptap.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Parallax来制造视差效果",
+    "headers": [
+      {
+        "level": 2,
+        "title": "简单介绍&github 地址",
+        "slug": "简单介绍-github-地址",
+        "link": "#简单介绍-github-地址",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "属性表，看这个就够了",
+        "slug": "属性表-看这个就够了",
+        "link": "#属性表-看这个就够了",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "效果",
+        "slug": "效果",
+        "link": "#效果",
+        "children": []
+      }
+    ],
+    "path": "/frontend/toys/parallax.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "element-plus使用",
+    "headers": [
+      {
+        "level": 2,
+        "title": "基础使用",
+        "slug": "基础使用",
+        "link": "#基础使用",
+        "children": [
+          {
+            "level": 3,
+            "title": "安装",
+            "slug": "安装",
+            "link": "#安装",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "引入/按需引入",
+            "slug": "引入-按需引入",
+            "link": "#引入-按需引入",
+            "children": []
+          }
+        ]
+      },
       {
         "level": 2,
         "title": "element-container",
         "slug": "element-container",
         "link": "#element-container",
-        "children": []
+        "children": [
+          {
+            "level": 3,
+            "title": "将页面的其他部分固定，将内容渲染到 main 里面，作为路由组件的出口",
+            "slug": "将页面的其他部分固定-将内容渲染到-main-里面-作为路由组件的出口",
+            "link": "#将页面的其他部分固定-将内容渲染到-main-里面-作为路由组件的出口",
+            "children": []
+          }
+        ]
       },
       {
         "level": 2,
         "title": "element-menu",
         "slug": "element-menu",
         "link": "#element-menu",
+        "children": [
+          {
+            "level": 3,
+            "title": "封装常量 menu 然后递归打印",
+            "slug": "封装常量-menu-然后递归打印",
+            "link": "#封装常量-menu-然后递归打印",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "el-icons",
+        "slug": "el-icons",
+        "link": "#el-icons",
+        "children": [
+          {
+            "level": 3,
+            "title": "自动导入",
+            "slug": "自动导入",
+            "link": "#自动导入",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "el-button",
+        "slug": "el-button",
+        "link": "#el-button",
+        "children": [
+          {
+            "level": 3,
+            "title": "Button 按钮",
+            "slug": "button-按钮",
+            "link": "#button-按钮",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "el-backtop",
+        "slug": "el-backtop",
+        "link": "#el-backtop",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "el-dialog",
+        "slug": "el-dialog",
+        "link": "#el-dialog",
+        "children": [
+          {
+            "level": 3,
+            "title": "关于样式的坑",
+            "slug": "关于样式的坑",
+            "link": "#关于样式的坑",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "el-Cascader 级联选择器",
+        "slug": "el-cascader-级联选择器",
+        "link": "#el-cascader-级联选择器",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "二次封装组件！",
+        "slug": "二次封装组件",
+        "link": "#二次封装组件",
         "children": []
       }
     ],
@@ -1366,21 +1720,13 @@ export const searchIndex = [
         "title": "actions",
         "slug": "actions",
         "link": "#actions",
-        "children": [
-          {
-            "level": 3,
-            "title": "",
-            "slug": "",
-            "link": "#",
-            "children": []
-          }
-        ]
+        "children": []
       },
       {
         "level": 2,
-        "title": "各种使用tips",
-        "slug": "各种使用tips",
-        "link": "#各种使用tips",
+        "title": "各种使用 tips",
+        "slug": "各种使用-tips",
+        "link": "#各种使用-tips",
         "children": [
           {
             "level": 3,
@@ -1393,6 +1739,35 @@ export const searchIndex = [
       }
     ],
     "path": "/frontend/vue/pinia.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "unpluginRouter文件路由",
+    "headers": [
+      {
+        "level": 2,
+        "title": "先思考",
+        "slug": "先思考",
+        "link": "#先思考",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "unpluginRouter 文件路由",
+        "slug": "unpluginrouter-文件路由",
+        "link": "#unpluginrouter-文件路由",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "响应式函数实践文件路由",
+        "slug": "响应式函数实践文件路由",
+        "link": "#响应式函数实践文件路由",
+        "children": []
+      }
+    ],
+    "path": "/frontend/vue/unpluginRouter.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1566,6 +1941,27 @@ export const searchIndex = [
             "children": []
           }
         ]
+      },
+      {
+        "level": 2,
+        "title": "useDropZone",
+        "slug": "usedropzone",
+        "link": "#usedropzone",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "useMouseInElement",
+        "slug": "usemouseinelement",
+        "link": "#usemouseinelement",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "refDebounced 超好用的节流",
+        "slug": "refdebounced-超好用的节流",
+        "link": "#refdebounced-超好用的节流",
+        "children": []
       }
     ],
     "path": "/frontend/vue/vueUse.html",
@@ -1622,6 +2018,13 @@ export const searchIndex = [
     "headers": [
       {
         "level": 2,
+        "title": "vite 启动模板 fork antfu",
+        "slug": "vite-启动模板-fork-antfu",
+        "link": "#vite-启动模板-fork-antfu",
+        "children": []
+      },
+      {
+        "level": 2,
         "title": "新建 vite 项目",
         "slug": "新建-vite-项目",
         "link": "#新建-vite-项目",
@@ -1646,7 +2049,22 @@ export const searchIndex = [
         "title": "安装 vue-router",
         "slug": "安装-vue-router",
         "link": "#安装-vue-router",
-        "children": []
+        "children": [
+          {
+            "level": 3,
+            "title": "自动注册路由",
+            "slug": "自动注册路由",
+            "link": "#自动注册路由",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "文件式路由",
+            "slug": "文件式路由",
+            "link": "#文件式路由",
+            "children": []
+          }
+        ]
       },
       {
         "level": 2,
@@ -2389,6 +2807,13 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "A I",
+    "headers": [],
+    "path": "/AI/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "Cs Common",
     "headers": [],
     "path": "/CsCommon/",
@@ -2403,9 +2828,16 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Java",
+    "title": "Ui Design",
     "headers": [],
-    "path": "/backend/java/",
+    "path": "/UiDesign/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "计算机基础",
+    "headers": [],
+    "path": "/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2417,9 +2849,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "计算机基础",
+    "title": "Java",
     "headers": [],
-    "path": "/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/",
+    "path": "/backend/java/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2469,6 +2901,13 @@ export const searchIndex = [
     "title": "Projects",
     "headers": [],
     "path": "/frontend/projects/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Toys",
+    "headers": [],
+    "path": "/frontend/toys/",
     "pathLocale": "/",
     "extraFields": []
   },

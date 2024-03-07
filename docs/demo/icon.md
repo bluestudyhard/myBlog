@@ -22,4 +22,4 @@ data: 2022-07-01
 iconPrefix 是你要设置的图标前缀，
 
 - **from 文档**
-  通常，你的图标类应该有一个通用前缀，对于 iconfont，图标类名为 iconfont icon-<ICON-NAME>，对于 fontawesome free，图标类名为 fas fa-<icon-name>。 因此，当你使用关键字或从 iconfont 网站、fontawesome kit 或 fontawesome CDN 生成的单个链接设置上述 asset 选项时，插件会识别它们并自动为你设置前缀为 iconfont icon- 和 fas fa-.在你使用自己的 url 或设置多个 url 的其他情况下，你可以自己手动设置此选项。毕竟输入 icon: apple 总是比 icon: iconfont icon-apple、icon: mdi:apple 或 icon: fa-solid fa-apple 更好。
+  通常，你的图标类应该有一个通用前缀，对于 iconfont，图标类名为 `iconfont icon-<ICON-NAME>`，对于 fontawesome free，图标类名为` fas fa-<icon-name>`。 因此，当你使用关键字或从 iconfont 网站、fontawesome kit 或 fontawesome CDN 生成的单个链接设置上述 asset 选项时，插件会识别它们并自动为你设置前缀为 iconfont icon- 和 fas fa-.在你使用自己的 url 或设置多个 url 的其他情况下，你可以自己手动设置此选项。毕竟输入 icon: apple 总是比 icon: iconfont icon-apple、icon: mdi:apple 或 icon: fa-solid fa-apple 更好。

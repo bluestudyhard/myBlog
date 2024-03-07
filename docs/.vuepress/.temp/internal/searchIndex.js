@@ -7,7 +7,7 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "",
+    "title": "AIgc",
     "headers": [
       {
         "level": 2,
@@ -29,7 +29,7 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "",
+    "title": "prompt from xxx GPT",
     "headers": [
       {
         "level": 3,
@@ -65,16 +65,16 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "提高搜索能力",
+    "title": "这是一个标题",
     "headers": [],
-    "path": "/CsCommon/%E6%8F%90%E9%AB%98%E6%90%9C%E7%B4%A2%E8%83%BD%E5%8A%9B.html",
+    "path": "/backend/",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "这是一个标题",
+    "title": "提高搜索能力",
     "headers": [],
-    "path": "/backend/",
+    "path": "/CsCommon/%E6%8F%90%E9%AB%98%E6%90%9C%E7%B4%A2%E8%83%BD%E5%8A%9B.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -426,7 +426,7 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "",
+    "title": "作为一个萌新应该如何“正确”的入门",
     "headers": [
       {
         "level": 2,
@@ -480,50 +480,6 @@ export const searchIndex = [
       }
     ],
     "path": "/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E4%BD%9C%E4%B8%BA%E4%B8%80%E4%B8%AA%E8%90%8C%E6%96%B0%E5%BA%94%E8%AF%A5%E5%A6%82%E4%BD%95%E2%80%9C%E6%AD%A3%E7%A1%AE%E2%80%9D%E7%9A%84%E5%85%A5%E9%97%A8.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "",
-    "headers": [
-      {
-        "level": 2,
-        "title": "起因",
-        "slug": "起因",
-        "link": "#起因",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "解决",
-        "slug": "解决",
-        "link": "#解决",
-        "children": [
-          {
-            "level": 3,
-            "title": "安装rustc",
-            "slug": "安装rustc",
-            "link": "#安装rustc",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "下载python3.8",
-            "slug": "下载python3-8",
-            "link": "#下载python3-8",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "手动安装whl",
-            "slug": "手动安装whl",
-            "link": "#手动安装whl",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/backend/python/autopy.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -612,6 +568,50 @@ export const searchIndex = [
       }
     ],
     "path": "/backend/java/springboot.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [
+      {
+        "level": 2,
+        "title": "起因",
+        "slug": "起因",
+        "link": "#起因",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "解决",
+        "slug": "解决",
+        "link": "#解决",
+        "children": [
+          {
+            "level": 3,
+            "title": "安装rustc",
+            "slug": "安装rustc",
+            "link": "#安装rustc",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "下载python3.8",
+            "slug": "下载python3-8",
+            "link": "#下载python3-8",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "手动安装whl",
+            "slug": "手动安装whl",
+            "link": "#手动安装whl",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/backend/python/autopy.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2842,16 +2842,16 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Python",
+    "title": "Java",
     "headers": [],
-    "path": "/backend/python/",
+    "path": "/backend/java/",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "Java",
+    "title": "Python",
     "headers": [],
-    "path": "/backend/java/",
+    "path": "/backend/python/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -3024,16 +3024,3 @@ export const searchIndex = [
     "extraFields": []
   }
 ]
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updateSearchIndex) {
-    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ searchIndex }) => {
-    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
-  })
-}

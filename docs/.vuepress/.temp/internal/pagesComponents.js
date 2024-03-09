@@ -7,8 +7,6 @@ export const pagesComponents = {
   "v-242354a7": defineAsyncComponent(() => import(/* webpackChunkName: "v-242354a7" */"D:/WEB/vuepress-blog/docs/.vuepress/.temp/pages/AI/aigc.html.vue")),
   // path: /AI/prompt%20from%20xxx.html
   "v-6c9fb0e9": defineAsyncComponent(() => import(/* webpackChunkName: "v-6c9fb0e9" */"D:/WEB/vuepress-blog/docs/.vuepress/.temp/pages/AI/prompt from xxx.html.vue")),
-  // path: /backend/
-  "v-551bb614": defineAsyncComponent(() => import(/* webpackChunkName: "v-551bb614" */"D:/WEB/vuepress-blog/docs/.vuepress/.temp/pages/backend/index.html.vue")),
   // path: /CsCommon/%E6%8F%90%E9%AB%98%E6%90%9C%E7%B4%A2%E8%83%BD%E5%8A%9B.html
   "v-b238d67a": defineAsyncComponent(() => import(/* webpackChunkName: "v-b238d67a" */"D:/WEB/vuepress-blog/docs/.vuepress/.temp/pages/CsCommon/提高搜索能力.html.vue")),
   // path: /demo/disable.html
@@ -23,6 +21,8 @@ export const pagesComponents = {
   "v-6e19edb7": defineAsyncComponent(() => import(/* webpackChunkName: "v-6e19edb7" */"D:/WEB/vuepress-blog/docs/.vuepress/.temp/pages/demo/page.html.vue")),
   // path: /demo/
   "v-1473bf53": defineAsyncComponent(() => import(/* webpackChunkName: "v-1473bf53" */"D:/WEB/vuepress-blog/docs/.vuepress/.temp/pages/demo/index.html.vue")),
+  // path: /backend/
+  "v-551bb614": defineAsyncComponent(() => import(/* webpackChunkName: "v-551bb614" */"D:/WEB/vuepress-blog/docs/.vuepress/.temp/pages/backend/index.html.vue")),
   // path: /frontend/
   "v-06198984": defineAsyncComponent(() => import(/* webpackChunkName: "v-06198984" */"D:/WEB/vuepress-blog/docs/.vuepress/.temp/pages/frontend/index.html.vue")),
   // path: /frontend/%E8%A7%A3%E6%9E%90html.html

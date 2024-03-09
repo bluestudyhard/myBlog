@@ -5,8 +5,6 @@ export const pagesData = {
   "v-242354a7": () => import(/* webpackChunkName: "v-242354a7" */"D:/WEB/vuepress-blog/docs/.vuepress/.temp/pages/AI/aigc.html.js").then(({ data }) => data),
   // path: /AI/prompt%20from%20xxx.html
   "v-6c9fb0e9": () => import(/* webpackChunkName: "v-6c9fb0e9" */"D:/WEB/vuepress-blog/docs/.vuepress/.temp/pages/AI/prompt from xxx.html.js").then(({ data }) => data),
-  // path: /backend/
-  "v-551bb614": () => import(/* webpackChunkName: "v-551bb614" */"D:/WEB/vuepress-blog/docs/.vuepress/.temp/pages/backend/index.html.js").then(({ data }) => data),
   // path: /CsCommon/%E6%8F%90%E9%AB%98%E6%90%9C%E7%B4%A2%E8%83%BD%E5%8A%9B.html
   "v-b238d67a": () => import(/* webpackChunkName: "v-b238d67a" */"D:/WEB/vuepress-blog/docs/.vuepress/.temp/pages/CsCommon/提高搜索能力.html.js").then(({ data }) => data),
   // path: /demo/disable.html
@@ -21,6 +19,8 @@ export const pagesData = {
   "v-6e19edb7": () => import(/* webpackChunkName: "v-6e19edb7" */"D:/WEB/vuepress-blog/docs/.vuepress/.temp/pages/demo/page.html.js").then(({ data }) => data),
   // path: /demo/
   "v-1473bf53": () => import(/* webpackChunkName: "v-1473bf53" */"D:/WEB/vuepress-blog/docs/.vuepress/.temp/pages/demo/index.html.js").then(({ data }) => data),
+  // path: /backend/
+  "v-551bb614": () => import(/* webpackChunkName: "v-551bb614" */"D:/WEB/vuepress-blog/docs/.vuepress/.temp/pages/backend/index.html.js").then(({ data }) => data),
   // path: /frontend/
   "v-06198984": () => import(/* webpackChunkName: "v-06198984" */"D:/WEB/vuepress-blog/docs/.vuepress/.temp/pages/frontend/index.html.js").then(({ data }) => data),
   // path: /frontend/%E8%A7%A3%E6%9E%90html.html

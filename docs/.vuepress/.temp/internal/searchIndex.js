@@ -65,13 +65,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "这是一个标题",
-    "headers": [],
-    "path": "/backend/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "提高搜索能力",
     "headers": [],
     "path": "/CsCommon/%E6%8F%90%E9%AB%98%E6%90%9C%E7%B4%A2%E8%83%BD%E5%8A%9B.html",
@@ -199,6 +192,13 @@ export const searchIndex = [
       }
     ],
     "path": "/demo/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "这是一个标题",
+    "headers": [],
+    "path": "/backend/",
     "pathLocale": "/",
     "extraFields": []
   },

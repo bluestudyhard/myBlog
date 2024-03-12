@@ -188,6 +188,58 @@ export default navbar([
         ]
       },
       {
+        "text": "面经",
+        "prefix": "面经/",
+        "icon": "fas fa-book-open",
+
+        "children": [
+          {
+            "text": "algorithm",
+            "link": "algorithm.md"
+          },
+          {
+            "text": "basic",
+            "link": "basic.md"
+          },
+          {
+            "text": "build",
+            "link": "build.md"
+          },
+          {
+            "text": "css",
+            "link": "css.md"
+          },
+          {
+            "text": "git",
+            "link": "git.md"
+          },
+          {
+            "text": "html",
+            "link": "html.md"
+          },
+          {
+            "text": "js",
+            "link": "js.md"
+          },
+          {
+            "text": "node",
+            "link": "node.md"
+          },
+          {
+            "text": "README",
+            "link": "README.md"
+          },
+          {
+            "text": "vue",
+            "link": "vue.md"
+          },
+          {
+            "text": "前端八股合集",
+            "link": "前端八股合集.md"
+          }
+        ]
+      },
+      {
         "text": "解析html",
         "link": "解析html.md"
       },

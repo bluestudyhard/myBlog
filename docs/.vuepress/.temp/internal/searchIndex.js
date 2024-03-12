@@ -65,6 +65,13 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "这是一个标题",
+    "headers": [],
+    "path": "/backend/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "提高搜索能力",
     "headers": [],
     "path": "/CsCommon/%E6%8F%90%E9%AB%98%E6%90%9C%E7%B4%A2%E8%83%BD%E5%8A%9B.html",
@@ -192,13 +199,6 @@ export const searchIndex = [
       }
     ],
     "path": "/demo/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "这是一个标题",
-    "headers": [],
-    "path": "/backend/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -817,7 +817,30 @@ export const searchIndex = [
         "title": "css",
         "slug": "css",
         "link": "#css",
-        "children": []
+        "children": [
+          {
+            "level": 3,
+            "title": "css 长度单位",
+            "slug": "css-长度单位",
+            "link": "#css-长度单位",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "实操",
+        "slug": "实操",
+        "link": "#实操",
+        "children": [
+          {
+            "level": 3,
+            "title": "解决响应式适配时，页面都已经 overflow:hidden 了还是会出现滚动条和下方空白区的问题",
+            "slug": "解决响应式适配时-页面都已经-overflow-hidden-了还是会出现滚动条和下方空白区的问题",
+            "link": "#解决响应式适配时-页面都已经-overflow-hidden-了还是会出现滚动条和下方空白区的问题",
+            "children": []
+          }
+        ]
       }
     ],
     "path": "/frontend/css/css.html",
@@ -1264,6 +1287,55 @@ export const searchIndex = [
             "title": "filter",
             "slug": "filter",
             "link": "#filter",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "splice",
+            "slug": "splice",
+            "link": "#splice",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "from",
+            "slug": "from",
+            "link": "#from",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "reduce",
+            "slug": "reduce",
+            "link": "#reduce",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "find",
+            "slug": "find",
+            "link": "#find",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "every | some",
+            "slug": "every-some",
+            "link": "#every-some",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "flat()",
+            "slug": "flat",
+            "link": "#flat",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "flatMap()",
+            "slug": "flatmap",
+            "link": "#flatmap",
             "children": []
           }
         ]
@@ -2309,6 +2381,900 @@ export const searchIndex = [
     "headers": [
       {
         "level": 2,
+        "title": "本笔记顺序按照代码随想录",
+        "slug": "本笔记顺序按照代码随想录",
+        "link": "#本笔记顺序按照代码随想录",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "数组",
+        "slug": "数组",
+        "link": "#数组",
+        "children": [
+          {
+            "level": 3,
+            "title": "二分查找",
+            "slug": "二分查找",
+            "link": "#二分查找",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "删除数组中重复项",
+            "slug": "删除数组中重复项",
+            "link": "#删除数组中重复项",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/frontend/%E9%9D%A2%E7%BB%8F/algorithm.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [
+      {
+        "level": 2,
+        "title": "计算机基础(面经集合)",
+        "slug": "计算机基础-面经集合",
+        "link": "#计算机基础-面经集合",
+        "children": []
+      }
+    ],
+    "path": "/frontend/%E9%9D%A2%E7%BB%8F/basic.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [
+      {
+        "level": 2,
+        "title": "关于 ESM",
+        "slug": "关于-esm",
+        "link": "#关于-esm",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "什么是 HMR",
+        "slug": "什么是-hmr",
+        "link": "#什么是-hmr",
+        "children": []
+      }
+    ],
+    "path": "/frontend/%E9%9D%A2%E7%BB%8F/build.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "CSS面经",
+    "headers": [
+      {
+        "level": 2,
+        "title": "CSS 的特性",
+        "slug": "css-的特性",
+        "link": "#css-的特性",
+        "children": [
+          {
+            "level": 3,
+            "title": "继承性",
+            "slug": "继承性",
+            "link": "#继承性",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "层叠性",
+            "slug": "层叠性",
+            "link": "#层叠性",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "优先级",
+            "slug": "优先级",
+            "link": "#优先级",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "css 的历史",
+        "slug": "css-的历史",
+        "link": "#css-的历史",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "CSS 的盒模型",
+        "slug": "css-的盒模型",
+        "link": "#css-的盒模型",
+        "children": [
+          {
+            "level": 3,
+            "title": "用途",
+            "slug": "用途",
+            "link": "#用途",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "理解行内元素和块级元素",
+        "slug": "理解行内元素和块级元素",
+        "link": "#理解行内元素和块级元素",
+        "children": [
+          {
+            "level": 3,
+            "title": "块级元素",
+            "slug": "块级元素",
+            "link": "#块级元素",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "行内元素",
+            "slug": "行内元素",
+            "link": "#行内元素",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "谈谈 BFC",
+        "slug": "谈谈-bfc",
+        "link": "#谈谈-bfc",
+        "children": [
+          {
+            "level": 3,
+            "title": "两个盒子的 margin 如果有重合的话，解决重合冲突",
+            "slug": "两个盒子的-margin-如果有重合的话-解决重合冲突",
+            "link": "#两个盒子的-margin-如果有重合的话-解决重合冲突",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2、制作两栏布局",
+            "slug": "_2、制作两栏布局",
+            "link": "#_2、制作两栏布局",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "清除元素内部的浮动",
+            "slug": "清除元素内部的浮动",
+            "link": "#清除元素内部的浮动",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/frontend/%E9%9D%A2%E7%BB%8F/css.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [],
+    "path": "/frontend/%E9%9D%A2%E7%BB%8F/git.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [],
+    "path": "/frontend/%E9%9D%A2%E7%BB%8F/html.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "JS 面经",
+    "headers": [
+      {
+        "level": 2,
+        "title": "JS 由哪三部分组成",
+        "slug": "js-由哪三部分组成",
+        "link": "#js-由哪三部分组成",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "js 有哪些内置对象",
+        "slug": "js-有哪些内置对象",
+        "link": "#js-有哪些内置对象",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "操作数组的方法",
+        "slug": "操作数组的方法",
+        "link": "#操作数组的方法",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "判断数据类型的方法",
+        "slug": "判断数据类型的方法",
+        "link": "#判断数据类型的方法",
+        "children": [
+          {
+            "level": 3,
+            "title": "基本数据类型和引用数据类型",
+            "slug": "基本数据类型和引用数据类型",
+            "link": "#基本数据类型和引用数据类型",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "什么是闭包",
+        "slug": "什么是闭包",
+        "link": "#什么是闭包",
+        "children": [
+          {
+            "level": 3,
+            "title": "闭包的用途",
+            "slug": "闭包的用途",
+            "link": "#闭包的用途",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "ES6",
+        "slug": "es6",
+        "link": "#es6",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "什么是 apply，call，bind，他们的区别是什么",
+        "slug": "什么是-apply-call-bind-他们的区别是什么",
+        "link": "#什么是-apply-call-bind-他们的区别是什么",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "讲一下防抖，节流，怎么实现",
+        "slug": "讲一下防抖-节流-怎么实现",
+        "link": "#讲一下防抖-节流-怎么实现",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "JS 的垃圾回收机制",
+        "slug": "js-的垃圾回收机制",
+        "link": "#js-的垃圾回收机制",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "js 的内存泄露",
+        "slug": "js-的内存泄露",
+        "link": "#js-的内存泄露",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "JS 的原型链",
+        "slug": "js-的原型链",
+        "link": "#js-的原型链",
+        "children": []
+      }
+    ],
+    "path": "/frontend/%E9%9D%A2%E7%BB%8F/js.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [],
+    "path": "/frontend/%E9%9D%A2%E7%BB%8F/node.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "面经集合",
+    "headers": [
+      {
+        "level": 2,
+        "title": "HTML",
+        "slug": "html",
+        "link": "#html",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "CSS",
+        "slug": "css",
+        "link": "#css",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "JavaScript",
+        "slug": "javascript",
+        "link": "#javascript",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Vue",
+        "slug": "vue",
+        "link": "#vue",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Node",
+        "slug": "node",
+        "link": "#node",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "打包",
+        "slug": "打包",
+        "link": "#打包",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "git",
+        "slug": "git",
+        "link": "#git",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "算法",
+        "slug": "算法",
+        "link": "#算法",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "计算机四大件特别是网络",
+        "slug": "计算机四大件特别是网络",
+        "link": "#计算机四大件特别是网络",
+        "children": []
+      }
+    ],
+    "path": "/frontend/%E9%9D%A2%E7%BB%8F/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [
+      {
+        "level": 2,
+        "title": "怎么实现自动注册组件",
+        "slug": "怎么实现自动注册组件",
+        "link": "#怎么实现自动注册组件",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "路由",
+        "slug": "路由",
+        "link": "#路由",
+        "children": [
+          {
+            "level": 3,
+            "title": "如何自动注册路由",
+            "slug": "如何自动注册路由",
+            "link": "#如何自动注册路由",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/frontend/%E9%9D%A2%E7%BB%8F/vue.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "前端八股合集",
+    "headers": [
+      {
+        "level": 2,
+        "title": "计算机网络",
+        "slug": "计算机网络",
+        "link": "#计算机网络",
+        "children": [
+          {
+            "level": 3,
+            "title": "GraphQL",
+            "slug": "graphql",
+            "link": "#graphql",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "什么是 HTTP",
+            "slug": "什么是-http",
+            "link": "#什么是-http",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "HTTP 版本区别",
+            "slug": "http-版本区别",
+            "link": "#http-版本区别",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "HTTPS 如何保证安全",
+            "slug": "https-如何保证安全",
+            "link": "#https-如何保证安全",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "HTTP 状态码",
+            "slug": "http-状态码",
+            "link": "#http-状态码",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "HTTP 请求方法",
+            "slug": "http-请求方法",
+            "link": "#http-请求方法",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "DNS",
+            "slug": "dns",
+            "link": "#dns",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "CDN",
+            "slug": "cdn",
+            "link": "#cdn",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "UDP 和 TCP 的区别",
+            "slug": "udp-和-tcp-的区别",
+            "link": "#udp-和-tcp-的区别",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "GET 和 POST 的区别",
+            "slug": "get-和-post-的区别",
+            "link": "#get-和-post-的区别",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "JavaScript",
+        "slug": "javascript",
+        "link": "#javascript",
+        "children": [
+          {
+            "level": 3,
+            "title": "Map 和 Set",
+            "slug": "map-和-set",
+            "link": "#map-和-set",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "事件模型",
+            "slug": "事件模型",
+            "link": "#事件模型",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "this",
+            "slug": "this",
+            "link": "#this",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "闭包",
+            "slug": "闭包",
+            "link": "#闭包",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "数组常用操作",
+            "slug": "数组常用操作",
+            "link": "#数组常用操作",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "setTimeout 实现 setInterval",
+            "slug": "settimeout-实现-setinterval",
+            "link": "#settimeout-实现-setinterval",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "数据类型",
+            "slug": "数据类型",
+            "link": "#数据类型",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "类型转换机制",
+            "slug": "类型转换机制",
+            "link": "#类型转换机制",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "原型和原型链",
+            "slug": "原型和原型链",
+            "link": "#原型和原型链",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Promise",
+            "slug": "promise",
+            "link": "#promise",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "继承",
+            "slug": "继承",
+            "link": "#继承",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "apply, call & bind",
+            "slug": "apply-call-bind",
+            "link": "#apply-call-bind",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "防抖节流",
+            "slug": "防抖节流",
+            "link": "#防抖节流",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "new",
+            "slug": "new",
+            "link": "#new",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "TypeScript",
+        "slug": "typescript",
+        "link": "#typescript",
+        "children": [
+          {
+            "level": 3,
+            "title": "什么是 TypeScript",
+            "slug": "什么是-typescript",
+            "link": "#什么是-typescript",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "数据类型",
+            "slug": "数据类型-1",
+            "link": "#数据类型-1",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "type & interface",
+            "slug": "type-interface",
+            "link": "#type-interface",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "枚举",
+            "slug": "枚举",
+            "link": "#枚举",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "泛型",
+            "slug": "泛型",
+            "link": "#泛型",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "浏览器",
+        "slug": "浏览器",
+        "link": "#浏览器",
+        "children": [
+          {
+            "level": 3,
+            "title": "垃圾回收机制",
+            "slug": "垃圾回收机制",
+            "link": "#垃圾回收机制",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "进程和线程",
+            "slug": "进程和线程",
+            "link": "#进程和线程",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Cookie",
+            "slug": "cookie",
+            "link": "#cookie",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "缓存",
+            "slug": "缓存",
+            "link": "#缓存",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "多标签页通信",
+            "slug": "多标签页通信",
+            "link": "#多标签页通信",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "跨域",
+            "slug": "跨域",
+            "link": "#跨域",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "渲染原理",
+            "slug": "渲染原理",
+            "link": "#渲染原理",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "CSS",
+        "slug": "css",
+        "link": "#css",
+        "children": [
+          {
+            "level": 3,
+            "title": "link 和 @import",
+            "slug": "link-和-import",
+            "link": "#link-和-import",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "1px 问题",
+            "slug": "_1px-问题",
+            "link": "#_1px-问题",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "元素居中",
+            "slug": "元素居中",
+            "link": "#元素居中",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "BFC",
+            "slug": "bfc",
+            "link": "#bfc",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "移动端适配",
+            "slug": "移动端适配",
+            "link": "#移动端适配",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Tailwind",
+            "slug": "tailwind",
+            "link": "#tailwind",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "雪碧图",
+            "slug": "雪碧图",
+            "link": "#雪碧图",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "React",
+        "slug": "react",
+        "link": "#react",
+        "children": [
+          {
+            "level": 3,
+            "title": "React Fiber",
+            "slug": "react-fiber",
+            "link": "#react-fiber",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "React 生命周期",
+            "slug": "react-生命周期",
+            "link": "#react-生命周期",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Hooks",
+            "slug": "hooks",
+            "link": "#hooks",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "事件合成",
+            "slug": "事件合成",
+            "link": "#事件合成",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "虚拟 DOM",
+            "slug": "虚拟-dom",
+            "link": "#虚拟-dom",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "React 组件",
+            "slug": "react-组件",
+            "link": "#react-组件",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "React Native",
+        "slug": "react-native",
+        "link": "#react-native",
+        "children": [
+          {
+            "level": 3,
+            "title": "桥接层",
+            "slug": "桥接层",
+            "link": "#桥接层",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "通信",
+            "slug": "通信",
+            "link": "#通信",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "RN 中的线程",
+            "slug": "rn-中的线程",
+            "link": "#rn-中的线程",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "桥 Bridge",
+            "slug": "桥-bridge",
+            "link": "#桥-bridge",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "前端工程化",
+        "slug": "前端工程化",
+        "link": "#前端工程化",
+        "children": [
+          {
+            "level": 3,
+            "title": "Webpack",
+            "slug": "webpack",
+            "link": "#webpack",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Babel",
+            "slug": "babel",
+            "link": "#babel",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Next.js",
+        "slug": "next-js",
+        "link": "#next-js",
+        "children": [
+          {
+            "level": 3,
+            "title": "SSR",
+            "slug": "ssr",
+            "link": "#ssr",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "其他",
+        "slug": "其他-1",
+        "link": "#其他-1",
+        "children": [
+          {
+            "level": 3,
+            "title": "base64",
+            "slug": "base64",
+            "link": "#base64",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/frontend/%E9%9D%A2%E7%BB%8F/%E5%89%8D%E7%AB%AF%E5%85%AB%E8%82%A1%E5%90%88%E9%9B%86.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [
+      {
+        "level": 2,
         "title": "第一章 操作系统概论",
         "slug": "第一章-操作系统概论",
         "link": "#第一章-操作系统概论",
@@ -3024,3 +3990,16 @@ export const searchIndex = [
     "extraFields": []
   }
 ]
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updateSearchIndex) {
+    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ searchIndex }) => {
+    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
+  })
+}

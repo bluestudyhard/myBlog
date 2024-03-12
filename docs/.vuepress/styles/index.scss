@@ -26,12 +26,10 @@ $shadows-big: multiple-box-shadow(100);
   // background: linear-gradient(to top right, #6d327c, #485DA6, #00a1ba, #00BF98, #36C486);
 
   // background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  background: radial-gradient(
-    circle at 30% -10%,
-    #fcfcdfb9 2%,
-    #72dafcbe 30%,
-    #3dacf0 100%
-  );
+  background: radial-gradient(circle at 30% -10%,
+      #fcfcdfb9 2%,
+      #72dafcbe 30%,
+      #3dacf0 100%);
   overflow: hidden;
   height: 92vh;
   user-select: none;
@@ -78,14 +76,21 @@ html[data-theme="dark"] {
       animation: animStar 150s linear infinite;
     }
   }
+
   .vp-feature-item {
     box-shadow: 2px 0px 2px 0px rgba(24, 43, 99, 0.295);
   }
+
   .vp-sidebar {
     .icon {
       font-size: 1.05rem;
       color: #f9f9f9;
     }
+  }
+
+  .theme-hope-content {
+    color: #d9d9d9;
+
   }
 }
 
@@ -97,22 +102,27 @@ html[data-theme="dark"] {
   -webkit-user-drag: none;
   // display: none;
 }
+
 .vp-sidebar {
   font-size: 0.9rem;
   padding-inline-start: 1rem;
+
   .icon {
     font-size: 1rem;
     color: #244664;
   }
 }
+
 .vp-features {
   //   flex-wrap: nowrap;
   align-items: center;
   text-align: inherit;
   place-content: inherit;
+
   .vp-feature-wrapper {
     overflow: hidden;
   }
+
   .vp-feature-item {
     box-shadow: 2px 0px 2px 0px rgb(2 77 241 / 13%);
   }
@@ -124,6 +134,7 @@ html[data-theme="dark"] {
 
 // 文章内容
 .theme-hope-content {
+
   h1,
   h2,
   h3,
@@ -134,8 +145,11 @@ html[data-theme="dark"] {
     font-weight: 550;
     padding-bottom: 0.7rem;
   }
-  font-size: 0.92rem;
+
+  font-size: 0.95rem;
   letter-spacing: 0.03rem;
+  font-weight: 520;
+  color: #05050b;
 
   p,
   ul,
@@ -144,4 +158,5 @@ html[data-theme="dark"] {
     line-height: 1.8;
     margin: 1rem 0;
   }
+
 }

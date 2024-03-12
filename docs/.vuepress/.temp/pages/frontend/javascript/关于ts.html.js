@@ -1,1 +1,14 @@
-export const data = JSON.parse("{\"key\":\"v-3a20ebc3\",\"path\":\"/frontend/javascript/%E5%85%B3%E4%BA%8Ets.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://mister-hope.github.io/frontend/javascript/%E5%85%B3%E4%BA%8Ets.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"melingkk's blog\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2024-02-26T15:15:38.000Z\"}],[\"meta\",{\"property\":\"article:author\",\"content\":\"bluestudyhard\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2024-02-26T15:15:38.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2024-02-26T15:15:38.000Z\\\",\\\"author\\\":[{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"bluestudyhard\\\",\\\"url\\\":\\\"https://github.com/bluestudyhard?tab=repositories\\\"}]}\"]]},\"headers\":[],\"git\":{\"createdTime\":1708960538000,\"updatedTime\":1708960538000,\"contributors\":[{\"name\":\"bluestudyhard\",\"email\":\"3164752596@qq.com\",\"commits\":1}]},\"readingTime\":{\"minutes\":0,\"words\":0},\"filePathRelative\":\"frontend/javascript/关于ts.md\",\"localizedDate\":\"2024年2月26日\",\"excerpt\":\"\",\"autoDesc\":true}")
+export const data = JSON.parse("{\"key\":\"v-3a20ebc3\",\"path\":\"/frontend/javascript/%E5%85%B3%E4%BA%8Ets.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{\"description\":\"\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://mister-hope.github.io/frontend/javascript/%E5%85%B3%E4%BA%8Ets.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"melingkk's blog\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"article:author\",\"content\":\"bluestudyhard\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":null,\\\"author\\\":[{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"bluestudyhard\\\",\\\"url\\\":\\\"https://github.com/bluestudyhard?tab=repositories\\\"}]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":0,\"words\":0},\"filePathRelative\":\"frontend/javascript/关于ts.md\",\"excerpt\":\"\",\"autoDesc\":true}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

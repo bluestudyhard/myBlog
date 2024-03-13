@@ -65,16 +65,16 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "这是一个标题",
+    "title": "提高搜索能力",
     "headers": [],
-    "path": "/backend/",
+    "path": "/CsCommon/%E6%8F%90%E9%AB%98%E6%90%9C%E7%B4%A2%E8%83%BD%E5%8A%9B.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "提高搜索能力",
+    "title": "这是一个标题",
     "headers": [],
-    "path": "/CsCommon/%E6%8F%90%E9%AB%98%E6%90%9C%E7%B4%A2%E8%83%BD%E5%8A%9B.html",
+    "path": "/backend/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -199,74 +199,6 @@ export const searchIndex = [
       }
     ],
     "path": "/demo/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "前端",
-    "headers": [
-      {
-        "level": 2,
-        "title": "目录",
-        "slug": "目录",
-        "link": "#目录",
-        "children": []
-      }
-    ],
-    "path": "/frontend/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "解析 html",
-    "headers": [
-      {
-        "level": 2,
-        "title": "想解析 html 的起因",
-        "slug": "想解析-html-的起因",
-        "link": "#想解析-html-的起因",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "两天后想到了绝妙的方法",
-        "slug": "两天后想到了绝妙的方法",
-        "link": "#两天后想到了绝妙的方法",
-        "children": [
-          {
-            "level": 3,
-            "title": "使用 jsdom",
-            "slug": "使用-jsdom",
-            "link": "#使用-jsdom",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/frontend/%E8%A7%A3%E6%9E%90html.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "",
-    "headers": [
-      {
-        "level": 2,
-        "title": "通配符",
-        "slug": "通配符",
-        "link": "#通配符",
-        "children": [
-          {
-            "level": 3,
-            "title": "常用通配符",
-            "slug": "常用通配符",
-            "link": "#常用通配符",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/frontend/%E9%80%9A%E9%85%8D%E7%AC%A6.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -400,6 +332,74 @@ export const searchIndex = [
       }
     ],
     "path": "/linux/%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEUbuntu.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "前端",
+    "headers": [
+      {
+        "level": 2,
+        "title": "目录",
+        "slug": "目录",
+        "link": "#目录",
+        "children": []
+      }
+    ],
+    "path": "/frontend/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "解析 html",
+    "headers": [
+      {
+        "level": 2,
+        "title": "想解析 html 的起因",
+        "slug": "想解析-html-的起因",
+        "link": "#想解析-html-的起因",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "两天后想到了绝妙的方法",
+        "slug": "两天后想到了绝妙的方法",
+        "link": "#两天后想到了绝妙的方法",
+        "children": [
+          {
+            "level": 3,
+            "title": "使用 jsdom",
+            "slug": "使用-jsdom",
+            "link": "#使用-jsdom",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/frontend/%E8%A7%A3%E6%9E%90html.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [
+      {
+        "level": 2,
+        "title": "通配符",
+        "slug": "通配符",
+        "link": "#通配符",
+        "children": [
+          {
+            "level": 3,
+            "title": "常用通配符",
+            "slug": "常用通配符",
+            "link": "#常用通配符",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/frontend/%E9%80%9A%E9%85%8D%E7%AC%A6.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1490,6 +1490,35 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "Parallax来制造视差效果",
+    "headers": [
+      {
+        "level": 2,
+        "title": "简单介绍&github 地址",
+        "slug": "简单介绍-github-地址",
+        "link": "#简单介绍-github-地址",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "属性表，看这个就够了",
+        "slug": "属性表-看这个就够了",
+        "link": "#属性表-看这个就够了",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "效果",
+        "slug": "效果",
+        "link": "#效果",
+        "children": []
+      }
+    ],
+    "path": "/frontend/toys/parallax.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "",
     "headers": [
       {
@@ -1574,35 +1603,6 @@ export const searchIndex = [
       }
     ],
     "path": "/frontend/projects/tiptap.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Parallax来制造视差效果",
-    "headers": [
-      {
-        "level": 2,
-        "title": "简单介绍&github 地址",
-        "slug": "简单介绍-github-地址",
-        "link": "#简单介绍-github-地址",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "属性表，看这个就够了",
-        "slug": "属性表-看这个就够了",
-        "link": "#属性表-看这个就够了",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "效果",
-        "slug": "效果",
-        "link": "#效果",
-        "children": []
-      }
-    ],
-    "path": "/frontend/toys/parallax.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2575,7 +2575,7 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "JS 面经",
+    "title": "JS面经",
     "headers": [
       {
         "level": 2,
@@ -3864,16 +3864,16 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Projects",
+    "title": "Toys",
     "headers": [],
-    "path": "/frontend/projects/",
+    "path": "/frontend/toys/",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "Toys",
+    "title": "Projects",
     "headers": [],
-    "path": "/frontend/toys/",
+    "path": "/frontend/projects/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -3990,16 +3990,3 @@ export const searchIndex = [
     "extraFields": []
   }
 ]
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updateSearchIndex) {
-    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ searchIndex }) => {
-    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
-  })
-}

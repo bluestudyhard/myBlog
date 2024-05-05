@@ -72,7 +72,9 @@ console.log(
 
 ### 基本数据类型和引用数据类型
 
-再提一嘴 JS 的原始数据类型，String，Number，Boolean，Null，Undefined，Symbol，BigInt，在地址中就是值本身
+再提一嘴 JS 的
+原始数据类型(基本数据类型)，
+**String，Number，Boolean，Null，Undefined，Symbol，BigInt**在地址中就是值本身
 引用数据类型就是复杂的数据类型，比如说 Object，Array，Function
 然后引用数据类型是存储在堆内存中的，然后如果两个引用数据类型指向了同一个地址，那么你修改一个的时候，另一个也会被修改
 
@@ -264,3 +266,144 @@ obj2.name = obj1;
 ## JS 的原型链
 
 ![](images/20240312230916.png)
+
+## ES6 模块和 cjs 的区别
+
+先说结论
+
+- es6 模块是编译时引入，commonjs 是运行时引入
+- es6 模块是只读的，而 cjs 模块是浅拷贝
+- 这俩用法就不同，然后现在推荐使用 es6 模块
+
+### es6 模块长什么样，怎么定义使用，特性是什么
+
+19 年后(node16)就推行使用 es6 模块了，es6 模块内部是私有的，想要使用的话只能使用 export 导出
+其实就是我们非常熟悉的 import export
+
+```js
+定义模块
+const count = 1
+export default count
+or
+export const count
+
+// 使用
+import count from './count'
+or
+import {count} from './count'
+```
+
+他有几个特性
+
+1. es6 模块是静态的，也就是说他是在编译的时候就确定
+2. es6 模块的异步加载的，所以我们也会经常在使用某些方法时，使用`await import()`来加载模块
+3. es6 模块的 read-only 的，不能修改导入的模块
+4. es 模块会在 package.json 中的 type 字段中指定，如果是 module 的话就是 es 模块，如果是 commonjs 的话就是 cjs 模块
+
+### cjs 模块长啥样，怎么定义，使用，特性是什么
+
+cjs 模块就是在有 es 模块之前，使用的最广泛的模块化
+使用
+
+```js
+const count = 1;
+const add = (a, b) => a + b;
+module.exports = count;
+module.exports = {
+  count,
+  add,
+};
+// 使用
+const count = require("./count");
+```
+
+cjs 模块是同步的，动态的，只有在实际运行时才会引入
+因为这些模块相当于是下载到了本地，require 方法是同步的
+
+然后 cjs 只能 node 服务器环境下才能使用
+
+### 为什么 nodeModules 里的模块都是 cjs 模块
+
+一个是历史遗留问题，因为早期的时候 node 是没有 es6 模块的，所以只能使用 cjs 模块
+然后是考虑到兼容性的问题，因为我们使用 nodemodules 的时候，都会先 install，只是引入的时候几乎都是需要使用 import 的了，老的包可能还只能使用 require
+
+### 什么是 AMD，CMD
+
+AMD 表示异步模块定义，CMD 表示通用模块定义，他们都是为了解决模块化的问题
+AMD（Asynchronous Module Definition）
+AMD 是由 RequireJS 提出的一种模块定义规范，它支持异步加载模块，允许模块在加载完成后立即使用。AMD 规范要求模块必须使用 define 函数来定义，使用 require 函数来加载依赖模块。
+
+```js
+// 定义模块
+define(["dependency1", "dependency2"], function (dep1, dep2) {
+  // 模块代码
+});
+
+// 加载模块
+require(["module1", "module2"], function (mod1, mod2) {
+  // 使用模块
+});
+```
+
+CMD（Common Module Definition）
+CMD 是由 Sea.js 提出的另一种模块定义规范，它也支持异步加载模块，但相比 AMD 更加强调模块的就近依赖，即模块代码中可以立即使用依赖模块，而不需要等到依赖模块加载完成。
+
+示例：
+
+```js
+// 定义模块
+define(function (require, exports, module) {
+  var dep1 = require("dependency1");
+  var dep2 = require("dependency2");
+  // 模块代码
+});
+
+// 加载模块
+seajs.use(["module1", "module2"], function (mod1, mod2) {
+  // 使用模块
+});
+```
+
+现在的使用实例
+尽管 AMD 和 CMD 都是为了解决 JavaScript 模块化开发中的问题而提出的规范，但在实际应用中，AMD 更为流行和广泛使用，特别是在前端开发中。许多 JavaScript 库和框架如 RequireJS、Dojo Toolkit 等都采用了 AMD 规范。
+
+一个现在仍在使用 AMD 规范的实例是使用 RequireJS 来管理前端模块。例如，在一个基于 RequireJS 的项目中，您可以定义和加载模块，实现模块化开发和异步加载依赖。
+
+## 从输入 URL 到页面展示发生了什么
+
+### 后端发生了什么
+
+## 浅拷贝和深拷贝的区别
+
+详情项目中的应用见之前写的[]
+
+首先我们要明白，浅拷贝不等于赋值，赋值本质是对一个对象的引用，指向的地址是一样的，而浅拷贝是拷贝了一层源对象相同的引用，但是如果源对象的属性是引用类型的话，那么浅拷贝的对象的属性还是指向的源对象的属性，所以如果修改了浅拷贝的对象的属性的话，源对象的属性也会被修改
+如果是基本的数据类型，你进行浅拷贝以后，就相当于新建了一个新的对象，但是如果是引用数据类型，像 Object，Array 等，那么浅拷贝的对象的属性还是指向的源对象的属性，所以如果修改了浅拷贝的对象的属性的话，源对象的属性也会被修改
+
+### 浅拷贝
+
+MDN 定义 对象的浅拷贝是其属性与拷贝源对象的属性共享相同引用（指向相同的底层值）的副本。因此，当你更改源或副本时，也可能导致其他对象也发生更改——也就是说，你可能会无意中对源或副本造成意料之外的更改。这种行为与深拷贝的行为形成对比，在深拷贝中，源和副本是完全独立的。
+
+浅拷贝的方法
+
+Object.assign
+array.prototype.slice 直接修改原型链，copy 一个新的数组
+array.prototype.
+最简单的，解构赋值：
+let obj = {...obj}
+
+### 深拷贝
+
+深拷贝就相当于是完全创建了一个和源对象不同的副本，不会影响到源对象的属性
+
+常见的深拷贝方法包括使用递归、JSON.parse(JSON.stringify(obj))、第三方库如 lodash 的\_.cloneDeep()等。
+
+```js
+// 深拷贝示例
+const obj1 = { a: 1, b: { c: 2 } };
+const obj2 = JSON.parse(JSON.stringify(obj1));
+obj2.b.c = 3;
+
+console.log(obj1); // { a: 1, b: { c: 2 } }
+console.log(obj2); // { a: 1, b: { c: 3 } }
+```

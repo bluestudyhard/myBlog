@@ -20,7 +20,9 @@ function func(a) {
 const computed =
 ```
 
-## Array 方法常用集合
+## 数据类型 s
+
+### Array 方法常用集合
 
 ### map
 
@@ -86,14 +88,74 @@ arr.filter((item) => {
   const bookmarks = item.bookmarks.filter((item) => item.checked);
   return bookmarks.length > 0;
 });
-
 ```
 
-### splice
+### slice
+
+### join
+
+join()就是把数组根据传入的参数规则进行拼接成字符串，返回一个字符串
+
+```js
+let arr = ["hello", "word", "nihao"];
+let str = arr.join(" ");
+console.log(str); // "hello word nihao"
+// 如果是没有参数的话，就是把每个字符都拼接成字符串
+let arr = ["h", "e", "l", "l", "o"];
+let str = arr.join("");
+console.log(str); // "hello"
+// 根据传入参数匹配拼接
+let arr = ["hello", "word", "nihao"];
+let str = arr.join(",");
+console.log(str); // "hello,word,nihao"
+```
 
 ### from
 
+array.from() 方法从一个类似数组或可迭代对象创建一个新的，浅拷贝的数组实例。
+例
+
+```js
+let arr = [1, 2, 3, 4, 5];
+let arr2 = Array.from(arr);
+console.log(arr2); // [1, 2, 3, 4, 5]
+```
+
 ### reduce
+
+reduce 这个东西有点魔法，简单来说就是他自带一个累加器，每次遍历数组时，可以用这个叠加器来进行一些操作，比如说可以拿来去重，扁平化数组，对象分组等等，目前真正用到的有一个数组嵌套数组去重
+
+```js
+/ 操练一下reduce  去重 reduce改变的不是原数组
+let arr = [1, 2, 2, 44, 4, 5, 2, 3, 4, 5, 6]
+let arr1 = arr.reduce((acc, curr) => acc.includes(curr) ? acc : [...acc, curr], []);
+console.log(arr1);
+// 数组扁平
+arr1 = [[1, 2, 3], [2, 3, 4]]
+let arr2 = arr1.reduce((acc, cur) => {
+    return acc.concat(cur)
+}, [])
+console.log(arr2)
+
+// 对象分组
+const people = [
+    { name: 'bbb', age: 21 },
+    { name: 'aa', age: 19 },
+    { name: 'bbbcc', age: 18 },
+    { name: 'bbbcc', age: 18 }
+]
+function groupBy(array, property) {
+    return array.reduce((acc, curr) => {
+        const key = curr[property]
+        console.log(key);
+        const curgroup = acc[key] ?? [] // 去重
+        console.log(curgroup);
+        return { ...acc, [key]: [...curgroup, curr] }
+    }, {})
+}
+const p1 = groupBy(people, 'age')
+console.log(p1);
+```
 
 ### find
 
@@ -101,7 +163,100 @@ arr.filter((item) => {
 
 ### flat()
 
+扁平化数组，将多维数组变成一维数组,只能扁平化一层
+
+```js
+let arr = [1, 2, [3, 4], [5, 6, [7, 8]]];
+let arr2 = arr.flat();
+console.log(arr2); // [1, 2, 3, 4, 5, 6, [7, 8]]
+```
+
 ### flatMap()
+
+flatMap 相当于 map() + flat()的结合，先 map 再 flat
+
+### string 常用方法合集
+
+#### split
+
+split()就是把字符串根据传入的参数规则进行分割成数组，返回一个数组
+
+```js
+let str = "hello word nihao";
+let arr = str.split(" ");
+console.log(arr); // ["hello", "word", "nihao"]
+// 如果是没有参数的话，就是把每个字符都分割成数组
+let str = "hello";
+let arr = str.split("");
+console.log(arr); // ["h", "e", "l", "l", "o"]
+// 根据传入参数匹配分割
+let str = "hello,word,nihao";
+let arr = str.split(",");
+console.log(arr); // ["hello", "word", "nihao"]
+```
+
+### map 常用方法集合
+
+### 遍历数据结构
+
+- 常用方法 Objet.keys() Object.values() Object.entries() Object.fromEntries()
+  这些方法是通用的，有一个共同的约定来将它们用于各种数据结构。如果我们创建一个我们自己的数据结构，我们也应该实现这些方法。
+
+它们支持 Map Set Array
+
+- Object.keys()返回的是一个数组，包含的是所有可枚举属性的键名，即是 key:value 格式的
+
+```js
+let obj = {
+  name: "blue",
+  age: 18,
+};
+console.log(Object.keys(obj)); // ["name", "age"]
+```
+
+- Object.values()返回的是一个数组，包含的是所有可枚举属性的键值，即是 key:value 格式的
+
+```js
+let obj = {
+  name: "blue",
+  age: 18,
+};
+console.log(Object.values(obj)); // ["blue", 18]
+```
+
+- Object.entries() 返回的是一整个数组形式的键值对
+
+```js
+let obj = {
+  name: "blue",
+  age: 18,
+};
+console.log(Object.entries(obj)); // [["name", "blue"], ["age", 18]]
+```
+
+- Object.fromEntries()是将一个数组转换成对象，前提是这个数组是键值对的形式
+
+```js
+let arr = [
+  ["name", "blue"],
+  ["age", 18],
+];
+console.log(Object.fromEntries(arr)); // {name: "blue", age: 18}
+```
+
+- 练习操作
+
+```js
+let arr = [
+  ["banana", 1],
+  ["orange", 2],
+  ["meat", 4],
+];
+let doublePrice = Object.fromEntries(
+  arr.map(([key,value]=>[key,value*2]))
+)
+console.log(doublePrice)
+```
 
 ```
 
